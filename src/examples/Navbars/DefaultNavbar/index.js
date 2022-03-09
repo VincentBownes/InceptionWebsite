@@ -25,7 +25,6 @@ import PropTypes from "prop-types";
 // @mui material components
 import Container from "@mui/material/Container";
 import Icon from "@mui/material/Icon";
-import keyboard_arrow_right from "@mui/icons-material/keyboard_arrow_right"
 import Popper from "@mui/material/Popper";
 import Grow from "@mui/material/Grow";
 import Grid from "@mui/material/Grid";
