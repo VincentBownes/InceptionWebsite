@@ -61,13 +61,17 @@ function Testpage() {
         justifyContent="left"
         sx={{ textAlign: "left", position: "relative", bottom: "250px"}}
       >
-        <MKTypography variant="h2">Coming soon</MKTypography>
-        <MKTypography variant="h2" color="inceptionLightPurple" mb={2}>
+        <MKTypography variant="h2">Coming soon </MKTypography>
+        <MKTypography variant="h2" color="inceptionPurple" textGradient mb={2}>
           1,679,477+ New NFTs
         </MKTypography>
       </Grid>
-
-      
+      <MKBox
+        component="img"
+        width="50%"
+        src={logo}
+        sx={{position: "absolute", left: "500px", top: "270px"}}
+      />
       </Container>
 
       </MKBox>

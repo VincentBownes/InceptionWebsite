@@ -146,6 +146,11 @@ export default {
       main: "#42424a",
       state: "#191919",
     },
+
+    inceptionPurple: {
+      main: "#6b02a2",
+      state: "#cf78fb",
+    },
   },
 
   socialMediaColors: {
