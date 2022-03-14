@@ -67,6 +67,7 @@ MKTypography.propTypes = {
     "dark",
     "text",
     "white",
+    "inceptionPurple",
   ]),
   fontWeight: PropTypes.oneOf([false, "light", "regular", "medium", "bold"]),
   textTransform: PropTypes.oneOf(["none", "capitalize", "uppercase", "lowercase"]),

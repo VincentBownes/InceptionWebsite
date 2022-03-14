@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 
 
+
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
@@ -23,7 +24,10 @@ import digitalOceanLogo from "assets/images/logos/gray-logos/logo-digitalocean.s
 import routes from "routes";
 
 // Images
-import bgImage from "assets/images/bg-about-us.jpg";
+import pink from "assets/images/pinkInception.jpg";
+import cloth from "assets/images/inceptioncloth.jpg"
+import tank from "assets/images/inceptiontank.gif"
+import logo from "assets/images/inceptionlogo.png"
 
 function Testpage() {
   return (
@@ -36,11 +40,43 @@ function Testpage() {
         sticky
       />
 
+      <MKBox
+        minHeight="100vh"
+        width="100%"
+        sx={{
+          backgroundImage: `url(${cloth})`,
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+          display: "grid",
+          placeItems: "center",
+        }}
+      >
+        
+      <Container>
+      <Grid
+        container
+        item
+        xs={6}
+        lg={6}
+        justifyContent="left"
+        sx={{ textAlign: "left", position: "relative", bottom: "250px"}}
+      >
+        <MKTypography variant="h2">Coming soon</MKTypography>
+        <MKTypography variant="h2" color="inceptionLightPurple" mb={2}>
+          1,679,477+ New NFTs
+        </MKTypography>
+      </Grid>
+
+      
+      </Container>
+
+      </MKBox>
+
     <MKBox
         minHeight="75vh"
         width="100%"
         sx={{
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: `url(${tank})`,
           backgroundSize: "cover",
           backgroundPosition: "top",
           display: "grid",

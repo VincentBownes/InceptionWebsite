@@ -96,6 +96,16 @@ export default {
     900: "#212529",
   },
 
+  inceptionPurple: {
+    main: "#6b02a2",
+    focus: "#6b02a2",
+  },
+
+  inceptionLightPurple: {
+    main: "#cf78fb",
+    focus: "#cf78fb",
+  },
+
   gradients: {
     primary: {
       main: "#EC407A",
