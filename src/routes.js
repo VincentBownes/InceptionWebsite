@@ -48,6 +48,7 @@ import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
 import Testpage from "pages/testpage";
+import Presentation from "layouts/pages/presentation";
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -78,14 +79,14 @@ const routes = [
 
   {
     name: "About Us",
-    route: "/pages/testpage.js",
-    component: <Testpage />,
+    route: "/pages/landing-pages/about-us",
+    component: <AboutUs />,
   },
 
   {
     name: "Staking",
-    route: "/pages/testpage.js",
-    component: <Testpage />,
+    route: "/pages/Presentation",
+    component: <Presentation />,
   },
 
   {

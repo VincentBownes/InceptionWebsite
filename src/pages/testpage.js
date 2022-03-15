@@ -34,10 +34,8 @@ function Testpage() {
       <>
       <DefaultNavbar
         routes={routes}
-        icon = "/assets/images/apple-icon.png"
         brand = ""
         center
-        sticky
       />
 
       <MKBox
@@ -46,34 +44,39 @@ function Testpage() {
         sx={{
           backgroundImage: `url(${cloth})`,
           backgroundSize: "cover",
-          backgroundPosition: "top",
+          backgroundPosition: "center",
           display: "grid",
-          placeItems: "center",
+          placeItems: "flex-end",
         }}
       >
-        
       <Container>
       <Grid
         container
         item
-        xs={6}
-        lg={6}
-        justifyContent="left"
-        sx={{ textAlign: "left", position: "relative", bottom: "250px"}}
+        direction="column"
+        justifyContent="flex-end"
+        alignItems="flex-end"
       >
         <MKTypography variant="h2">Coming soon </MKTypography>
         <MKTypography variant="h2" color="inceptionPurple" textGradient mb={2}>
           1,679,477+ New NFTs
         </MKTypography>
       </Grid>
+      <Grid
+        container
+        item
+        direction="column"
+        justifyContent="flex-start"
+        alignItems="flex-start"
+      >
       <MKBox
         component="img"
-        width="50%"
+        width="100%"
         src={logo}
-        sx={{position: "absolute", left: "500px", top: "270px"}}
+        sx={{display: "flex", flexDirection: "row", justifyContent: "flex-end"}}
       />
+      </Grid>
       </Container>
-
       </MKBox>
 
     <MKBox
