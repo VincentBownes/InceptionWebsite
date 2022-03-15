@@ -50,50 +50,63 @@ function Testpage() {
         }}
       >
       <Container>
-      <Grid
-        container
-        item
-        direction="column"
-        justifyContent="flex-end"
-        alignItems="flex-end"
-      >
-        <MKTypography variant="h2">Coming soon </MKTypography>
-        <MKTypography variant="h2" color="inceptionPurple" textGradient mb={2}>
-          1,679,477+ New NFTs
-        </MKTypography>
-      </Grid>
-      <Grid
-        container
-        item
-        direction="column"
-        justifyContent="flex-start"
-        alignItems="flex-start"
-      >
-      <MKBox
-        component="img"
-        width="100%"
-        src={logo}
-        sx={{display: "flex", flexDirection: "row", justifyContent: "flex-end"}}
-      />
-      </Grid>
+        <Grid
+          container
+          item
+          direction="column"
+          justifyContent="flex-end"
+          alignItems="flex-end"
+        >
+          <MKTypography variant="h2">Coming soon </MKTypography>
+          <MKTypography variant="h2" color="inceptionPurpleGradient" textGradient mb={2}>
+            1,679,477+ New NFTs
+          </MKTypography>
+        </Grid>
+        <Grid
+          container
+          item
+          direction="column"
+          justifyContent="flex-start"
+          alignItems="flex-start"
+        >
+          <MKBox
+            component="img"
+            width="100%"
+            src={logo}
+            sx={{display: "flex", flexDirection: "row", justifyContent: "flex-end"}}
+          />
+        </Grid>
       </Container>
       </MKBox>
 
     <MKBox
-        minHeight="75vh"
+        minHeight="100vh"
         width="100%"
         sx={{
           backgroundImage: `url(${tank})`,
           backgroundSize: "cover",
-          backgroundPosition: "top",
+          backgroundPosition: "center",
           display: "grid",
-          placeItems: "center",
+          placeItems: "flex-end",
         }}
       >
+      <Container>
+        <Grid
+          container
+          item 
+          justifyContents="center"
+          sx={{ textAlign: "center"}}
+        >
+          <MKTypography variant="h2" color="light">Welcome! to the Inception website. Important things can go here!</MKTypography>
+        </Grid>
+
+      </Container>
+
+
       </MKBox>
       
       <Container>
-          <Grid container spacing={3} justifyContent="center" mx="auto">
+          <Grid container spacing={3} sx={{ mt: 8 }}>
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 variant="gradient"
@@ -121,8 +134,6 @@ function Testpage() {
           </Grid>
         </Container>
 
-
-
         <MKBox component="section" py={12}>
       <Container>
         <Grid
@@ -133,64 +144,46 @@ function Testpage() {
           justifyContent="center"
           sx={{ mx: "auto", textAlign: "center" }}
         >
-          <MKTypography variant="h2">Trusted by over</MKTypography>
-          <MKTypography variant="h2" color="info" textGradient mb={2}>
-            1,679,477+ web developers
+          <MKTypography variant="h2">Road map</MKTypography>
+          <MKTypography variant="h2" color="inceptionPurpleGradient" textGradient mb={2}>
+            Our plan going forward
           </MKTypography>
           <MKTypography variant="body1" color="text" mb={2}>
-            Many Fortune 500 companies, startups, universities and governmental institutions love
-            Creative Tim&apos;s products.
+            We are going to make lots of NFTs and this is where we are going to tell you about them.
           </MKTypography>
         </Grid>
         <Grid container spacing={3} sx={{ mt: 8 }}>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
-              name="Nick Willever"
-              date="1 day ago"
-              review="This is an excellent product, the documentation is excellent and helped me get things done more efficiently."
-              rating={5}
+              color="light"
+              name="Phase 1"
+              date="3 weeks"
+              review="We are going to do this stuff in phase 1"
             />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
-              color="info"
-              name="Shailesh Kushwaha"
-              date="1 week ago"
-              review="I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
-              rating={5}
+              color="dark"
+              name="Phase 2"
+              date="4 weeks"
+              review="We are going to do this stuff for phase 2 by the 4 week mark."
             />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
-              name="Samuel Kamuli"
-              date="3 weeks ago"
-              review="Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!."
-              rating={5}
+              color="light"
+              name="Phase 3"
+              date="2 months"
+              review="This is stuff we will do in phase 3 by the 2 month mark"
             />
           </Grid>
         </Grid>
+
+
         <Divider sx={{ my: 6 }} />
         <Grid container spacing={3} justifyContent="center">
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={appleLogo} alt="Apple" width="100%" opacity={0.6} />
-          </Grid>
-          <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={facebookLogo} alt="Facebook" width="100%" opacity={0.6} />
-          </Grid>
-          <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={nasaLogo} alt="Nasa" width="100%" opacity={0.6} />
-          </Grid>
-          <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={vodafoneLogo} alt="Vodafone" width="100%" opacity={0.6} />
-          </Grid>
-          <Grid item xs={6} md={4} lg={2}>
-            <MKBox
-              component="img"
-              src={digitalOceanLogo}
-              alt="DigitalOcean"
-              width="100%"
-              opacity={0.6}
-            />
           </Grid>
         </Grid>
       </Container>

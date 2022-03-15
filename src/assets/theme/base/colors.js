@@ -147,7 +147,7 @@ export default {
       state: "#191919",
     },
 
-    inceptionPurple: {
+    inceptionPurpleGradient: {
       main: "#6b02a2",
       state: "#cf78fb",
     },
