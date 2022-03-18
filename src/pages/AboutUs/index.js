@@ -24,12 +24,14 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+import SimpleFooter from "examples/Footers/SimpleFooter"
 
 // About Us page sections
 import Team from "pages/AboutUs/Team";
 
 // Routes
 import routes from "routes";
+import footerRoutes from "footer.routes";
 
 // Images
 import cloth from "assets/images/inceptioncloth.jpg"
@@ -114,6 +116,10 @@ function AboutUs() {
       >
         <Team />
       </Card>
+      <MKBox pt={6} px={1} mt={6}>
+        <SimpleFooter content={footerRoutes} />
+      </MKBox>
+
     </>
   );
 }

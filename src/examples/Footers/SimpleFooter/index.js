@@ -66,19 +66,12 @@ function SimpleFooter({ company, links, light }) {
           color={light ? "white" : "text"}
           fontSize={size.sm}
         >
-          &copy; {new Date().getFullYear()}, made with
+          {new Date().getFullYear()}, our NFT related slogan could go here
           <MKBox fontSize={size.md} color={light ? "white" : "text"} mb={-0.5} mx={0.25}>
             <Icon color="inherit" fontSize="inherit">
               favorite
             </Icon>
           </MKBox>
-          by
-          <Link href={href} target="_blank">
-            <MKTypography variant="button" fontWeight="medium" color={light ? "white" : "dark"}>
-              &nbsp;{name}&nbsp;
-            </MKTypography>
-          </Link>
-          for a better web.
         </MKBox>
         <MKBox
           component="ul"
