@@ -133,8 +133,8 @@ function DefaultNavbarMobile({ routes, open }) {
                     <MKTypography
                       display="block"
                       variant="button"
-                      color="text"
-                      fontWeight="regular"
+                      color="inceptionPurple"
+                      fontWeight="bold"
                       sx={{ transition: "all 300ms linear" }}
                     >
                       {item.description}

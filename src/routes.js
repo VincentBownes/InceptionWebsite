@@ -43,11 +43,11 @@ import Icon from "@mui/material/Icon";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
-import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
-import Testpage from "pages/testpage";
+import HomePage from "pages/HomePage"
+import AboutUs from "pages/AboutUs";
 import Presentation from "layouts/pages/presentation";
 
 // Sections
@@ -73,32 +73,32 @@ import Typography from "layouts/sections/elements/typography";
 const routes = [
   {
     name: "Home",
-    route: "/pages/testpage.js",
-    component: <Testpage />,
+    route: "/pages/HomePage.js",
+    component: <HomePage />,
   },
 
   {
     name: "About Us",
-    route: "/pages/landing-pages/about-us",
+    route: "/pages/AboutUs",
     component: <AboutUs />,
   },
 
   {
-    name: "Staking",
+    name: "Place holder",
     route: "/pages/Presentation",
     component: <Presentation />,
   },
 
   {
-    name: "Contact Info",
-    route: "/pages/testpage.js",
-    component: <Testpage />,
+    name: "Place Holder 2",
+    route: "/pages/HomePage.js",
+    component: <HomePage />,
   },
 
   {
-    name: "Team Memebers",
-    route: "/pages/testpage.js",
-    component: <Testpage />,
+    name: "Place Holder 3",
+    route: "/pages/HomePage.js",
+    component: <HomePage />,
   }
 ];
 

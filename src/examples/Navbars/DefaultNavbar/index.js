@@ -69,8 +69,8 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
     }
 
     /** 
-     The event listener that's calling the displayMobileNavbar function when 
-     resizing the window.
+    The event listener that's calling the displayMobileNavbar function when 
+    resizing the window.
     */
     window.addEventListener("resize", displayMobileNavbar);
 
@@ -153,7 +153,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                         variant="button"
                         color="text"
                         textTransform="capitalize"
-                        fontWeight="regular"
+                        fontWeight="bold"
                         py={0.625}
                         px={2}
                         sx={({ palette: { grey, dark }, borders: { borderRadius } }) => ({
@@ -253,8 +253,8 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                 <MKTypography
                   display="block"
                   variant="button"
-                  color="text"
-                  fontWeight="regular"
+                  color="inceptionPurple"
+                  fontWeight="bold"
                   sx={{ transition: "all 300ms linear" }}
                 >
                   {item.description}
@@ -265,8 +265,8 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             )}
             {item.collapse && (
               <Icon
-                fontSize="small"
-                sx={{ fontWeight: "normal", verticalAlign: "middle", mr: -0.5 }}
+                fontSize="medium"
+                sx={{ fontWeight: "bold", verticalAlign: "middle", mr: -0.5 }}
               >
                 keyboard_arrow_right
               </Icon>
@@ -582,6 +582,7 @@ DefaultNavbar.propTypes = {
         "light",
         "default",
         "white",
+        "inceptionPurple"
       ]),
       label: PropTypes.string.isRequired,
     }),

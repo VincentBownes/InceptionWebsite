@@ -1,9 +1,6 @@
 // Mui components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
-
-
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -11,14 +8,6 @@ import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 import DefaultReviewCard from "examples/Cards/ReviewCards/DefaultReviewCard";
-
-
-// Images
-import appleLogo from "assets/images/logos/gray-logos/logo-apple.svg";
-import facebookLogo from "assets/images/logos/gray-logos/logo-facebook.svg";
-import nasaLogo from "assets/images/logos/gray-logos/logo-nasa.svg";
-import vodafoneLogo from "assets/images/logos/gray-logos/logo-vodafone.svg";
-import digitalOceanLogo from "assets/images/logos/gray-logos/logo-digitalocean.svg";
 
 // Routes
 import routes from "routes";
@@ -29,9 +18,9 @@ import cloth from "assets/images/inceptioncloth.jpg"
 import tank from "assets/images/inceptiontank.gif"
 import logo from "assets/images/inceptionlogo.png"
 
-function Testpage() {
+function HomePage() {
   return (
-      <>
+    <>
       <DefaultNavbar
         routes={routes}
         brand = ""
@@ -86,23 +75,20 @@ function Testpage() {
           backgroundImage: `url(${tank})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          display: "grid",
-          placeItems: "flex-end",
+          display: "flex",
+          alignItems: "flex-end"
         }}
       >
       <Container>
         <Grid
           container
           item 
-          justifyContents="center"
+          placeItems="center"
           sx={{ textAlign: "center"}}
         >
-          <MKTypography variant="h2" color="light">Welcome! to the Inception website. Important things can go here!</MKTypography>
+          <MKTypography variant="h2" color="light">Welcome! to the Inception website. Important things can go here! text</MKTypography>
         </Grid>
-
       </Container>
-
-
       </MKBox>
       
       <Container>
@@ -141,6 +127,8 @@ function Testpage() {
           item
           xs={12}
           lg={6}
+          xl={4}
+          xxl={4}
           justifyContent="center"
           sx={{ mx: "auto", textAlign: "center" }}
         >
@@ -178,31 +166,10 @@ function Testpage() {
             />
           </Grid>
         </Grid>
-
-
-        <Divider sx={{ my: 6 }} />
-        <Grid container spacing={3} justifyContent="center">
-          <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={facebookLogo} alt="Facebook" width="100%" opacity={0.6} />
-          </Grid>
-        </Grid>
       </Container>
     </MKBox>
-
-
-
-
-
-
-
       </>
-
-  
-  
-  
   );
-
-
 }
 
-export default Testpage;
+export default HomePage;
