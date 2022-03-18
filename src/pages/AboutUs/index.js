@@ -117,7 +117,7 @@ function AboutUs() {
         <Team />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
-        <SimpleFooter content={footerRoutes} />
+        <SimpleFooter />
       </MKBox>
 
     </>

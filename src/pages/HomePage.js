@@ -8,12 +8,12 @@ import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 import DefaultReviewCard from "examples/Cards/ReviewCards/DefaultReviewCard";
+import SimpleFooter from "examples/Footers/SimpleFooter"
 
 // Routes
 import routes from "routes";
 
 // Images
-import pink from "assets/images/pinkInception.jpg";
 import cloth from "assets/images/inceptioncloth.jpg"
 import tank from "assets/images/inceptiontank.gif"
 import logo from "assets/images/inceptionlogo.png"
@@ -167,6 +167,9 @@ function HomePage() {
           </Grid>
         </Grid>
       </Container>
+    </MKBox>
+    <MKBox pt={6} px={1} mt={6}>
+      <SimpleFooter />
     </MKBox>
       </>
   );

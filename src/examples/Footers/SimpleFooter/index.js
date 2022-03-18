@@ -73,38 +73,20 @@ function SimpleFooter({ company, links, light }) {
             </Icon>
           </MKBox>
         </MKBox>
-        <MKBox
-          component="ul"
-          sx={({ breakpoints }) => ({
-            display: "flex",
-            flexWrap: "wrap",
-            alignItems: "center",
-            justifyContent: "center",
-            listStyle: "none",
-            mt: 3,
-            mb: 0,
-            p: 0,
-
-            [breakpoints.up("lg")]: {
-              mt: 0,
-            },
-          })}
-        >
-          {renderLinks()}
-        </MKBox>
+        
       </MKBox>
     </Container>
   );
 }
 
 // Setting default values for the props of SimpleFooter
+// Empty for now could add later on if desired
 SimpleFooter.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company: { href: "", name: "Inception" },
   links: [
-    { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
+    { href: "", name: "About Us" },
+    { href: "", name: "Blog" },
+    { href: "", name: "License" },
   ],
   light: false,
 };
