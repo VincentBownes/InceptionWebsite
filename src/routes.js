@@ -62,19 +62,19 @@ const routes = [
   },
 
   {
-    name: "Place holder",
+    name: "Services",
     route: "/pages/Presentation",
     component: <Presentation />,
   },
 
   {
-    name: "Place Holder 2",
+    name: "Customers",
     route: "/pages/HomePage.js",
     component: <HomePage />,
   },
 
   {
-    name: "Place Holder 3",
+    name: "Whitepaper",
     route: "/pages/HomePage.js",
     component: <HomePage />,
   }

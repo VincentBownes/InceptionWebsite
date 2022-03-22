@@ -74,9 +74,9 @@ function DefaultNavbarDropdown({
         </MKTypography>
         <MKTypography
           variant="h5"
-          fontWeight="bold"
+          fontWeight="normal"
           textTransform="capitalize"
-          color= "inceptionPurple"
+          color= "inceptionLightPurple"
           sx={{ fontWeight: "100%", ml: 1, mr: 0.25 }}
         >
           {name}

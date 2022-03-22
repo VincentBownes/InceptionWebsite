@@ -17,6 +17,7 @@ import routes from "routes";
 import cloth from "assets/images/inceptioncloth.jpg"
 import tank from "assets/images/inceptiontank.gif"
 import logo from "assets/images/inceptionlogo.png"
+import black from "assets/images/inceptionBlackbg.jpg"
 
 function HomePage() {
   return (
@@ -31,7 +32,11 @@ function HomePage() {
         minHeight="100vh"
         width="100%"
         sx={{
-          backgroundImage: `url(${cloth})`,
+          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+            `${linearGradient(
+              rgba(gradients.dark.main, 0.6),
+              rgba(gradients.dark.state, 0.6)
+            )}, url(${black})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "grid",
