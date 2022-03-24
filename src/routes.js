@@ -69,6 +69,7 @@ import Dropdowns from "layouts/sections/elements/dropdowns";
 import ProgressBars from "layouts/sections/elements/progress-bars";
 import Toggles from "layouts/sections/elements/toggles";
 import Typography from "layouts/sections/elements/typography";
+import Contact from "pages/LandingPages/Author/sections/Contact";
 
 const routes = [
   {
@@ -84,22 +85,28 @@ const routes = [
   },
 
   {
-    name: "Place holder",
+    name: "Services",
     route: "/pages/Presentation",
+    component: <ContactUs />,
+  },
+
+  {
+    name: "The Aliens",
+    route: "/aliens",
     component: <Presentation />,
   },
 
   {
-    name: "Place Holder 2",
-    route: "/pages/HomePage.js",
-    component: <HomePage />,
+    name: "White Paper",
+    route: "/pages/LandingPages/Author",
+    component: <Author />,
   },
 
   {
-    name: "Place Holder 3",
-    route: "/pages/HomePage.js",
-    component: <HomePage />,
-  }
+    name: "Launchpad",
+    route: "/pages/LandingPages/SignIn",
+    component: <SignIn />,
+  },
 ];
 
 export default routes;

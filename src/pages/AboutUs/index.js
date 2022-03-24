@@ -34,11 +34,25 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import cloth from "assets/images/inceptioncloth.jpg"
+import alien from "assets/images/alienHead.png"
+import black from "assets/images/black.png"
+//import vid from "assests/animation.mp4"
 
 function AboutUs() {
   return (
-    <>
+    <MKBox
+      minHeight="100%"
+      width="100%"
+      back
+      sx={{
+        backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+            `url(${black})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        display: "grid",
+        placeItems: "flex-end",
+      }}
+    >
       <DefaultNavbar
         routes={routes}
         brand = ""
@@ -49,17 +63,14 @@ function AboutUs() {
         minHeight="100vh"
         width="100%"
         sx={{
-          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
-            `${linearGradient(
-              rgba(gradients.dark.main, 0.6),
-              rgba(gradients.dark.state, 0.6)
-            )}, url(${cloth})`,
+          
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "grid",
           placeItems: "center",
         }}
       >
+        
         <Container>
           <Grid
             container
@@ -71,23 +82,48 @@ function AboutUs() {
             flexDirection="column"
             sx={{ mx: "auto", textAlign: "center" }}
           >
-            <MKTypography
+            <MKBox
+              minHeight="65vh"
+              width="55vh"
+              back
+              sx={{
+                backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+                    `url(${alien})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                display: "grid",
+                placeItems: "flex-end",
+              }}
+            >
+              <MKTypography
               variant="h1"
               color="white"
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
                   fontSize: size["3xl"],
                 },
+                textAlign: "center",
+                
               })}
+              >
+                Bringing the World NFTs
+              </MKTypography>
+            </MKBox>
+            <MKBox
+              minHeight="100vh"
+              width="100%"
+              back
+              sx={{
+                backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+                    `url(${black})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                display: "grid",
+                placeItems: "flex-end",
+              }}
             >
-              Meet our dedicated team
-            </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re making lots of NFTs and you are going to buy them!
-            </MKTypography>
-            <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Find us on
-            </MKTypography>
+              </MKBox>
+            
             <MKBox display="flex" justifyContent="center" alignItems="center">
               <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
                 <i className="fab fa-facebook" />
@@ -105,22 +141,35 @@ function AboutUs() {
           </Grid>
         </Container>
       </MKBox>
-      <Card
-        sx={{
-          p: 2,
-          mx: { xs: 2, lg: 3 },
-          mt: -12,
-          mb: 4,
-          boxShadow: ({ boxShadows: { xxl } }) => xxl,
-        }}
+      <Grid
+        container
+        spacing={0}
+        direction="column"
+        alignItems="center"
+        justify="center"
+        style={{ minHeight: '100vh' }}
       >
-        <Team />
-      </Card>
+
+        <Grid item xs={3}>
+          <Card
+            sx={{
+              p: 2,
+              mx: { xs: 2, lg: 3 },
+              mt: -12,
+              mb: 4,
+              boxShadow: ({ boxShadows: { xxl } }) => xxl,
+            }}
+          >
+            <Team />
+          </Card>
+        </Grid>      
+      </Grid>
+      
       <MKBox pt={6} px={1} mt={6}>
         <SimpleFooter />
       </MKBox>
 
-    </>
+    </MKBox>
   );
 }
 
