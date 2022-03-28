@@ -11,7 +11,7 @@ import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 import DefaultReviewCard from "examples/Cards/ReviewCards/DefaultReviewCard";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+import SimpleFooter from "examples/Footers/SimpleFooter";
 
 // Routes
 import routes from "routes";
@@ -55,6 +55,7 @@ function HomePage() {
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
             `url(${black})`,
+
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "grid",
@@ -225,7 +226,7 @@ function HomePage() {
         </Grid>
       </Grid>
       <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+        <SimpleFooter />
       </MKBox>
     </MKBox>
   );

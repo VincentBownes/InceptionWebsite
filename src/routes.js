@@ -43,12 +43,12 @@ import Icon from "@mui/material/Icon";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
-import ContactUs from "layouts/pages/landing-pages/contact-us";
-import Author from "layouts/pages/landing-pages/author";
-import SignIn from "layouts/pages/authentication/sign-in";
 import HomePage from "pages/HomePage"
 import AboutUs from "pages/AboutUs";
 import Presentation from "layouts/pages/presentation";
+import ContactUs from "pages/LandingPages/ContactUs";
+import Author from "pages/LandingPages/Author";
+import SignIn from "pages/LandingPages/SignIn"
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
