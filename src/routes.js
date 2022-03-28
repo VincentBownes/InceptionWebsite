@@ -46,6 +46,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import HomePage from "pages/HomePage"
 import AboutUs from "pages/AboutUs";
 import Presentation from "layouts/pages/presentation";
+import Whitepaper from "pages/Whitepaper";
 
 
 const routes = [
@@ -75,8 +76,8 @@ const routes = [
 
   {
     name: "Whitepaper",
-    route: "/pages/HomePage.js",
-    component: <HomePage />,
+    route: "/pages/Whitepaper.js",
+    component: <Whitepaper />,
   }
 ];
 
