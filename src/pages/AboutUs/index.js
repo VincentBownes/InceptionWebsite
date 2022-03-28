@@ -101,7 +101,23 @@ function AboutUs() {
           </Grid>
         </Container>
       </MKBox>
-      <Card
+      <MKBox
+        minHeight="100vh"
+        width="100%"
+        sx={{
+          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+            `${linearGradient(
+              rgba(gradients.dark.state, 0.6),
+              rgba(gradients.dark.main, 0.6)
+              
+            )}, url(${cloth})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "grid",
+          placeItems: "center",
+        }}
+      >
+        <Card
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
@@ -112,6 +128,9 @@ function AboutUs() {
       >
         <Team />
       </Card>
+
+      </MKBox>
+      
       <MKBox pt={6} px={1} mt={6}>
         <SimpleFooter />
       </MKBox>

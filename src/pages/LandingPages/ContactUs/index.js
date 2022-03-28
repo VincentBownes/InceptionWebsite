@@ -15,6 +15,7 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -29,14 +30,40 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
+import CustomerCard from "components/CustomerCard";
+import RotatingCard from "examples/Cards/RotatingCard";
+import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
+import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
+
+// Images
+import bgFront from "assets/images/rotating-card-bg-front.jpeg";
+import bgBack from "assets/images/rotating-card-bg-back.jpeg";
 
 // Image
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
 
-function ContactUs() {
-  return (
-    <>
-      <MKBox position="fixed" top="0.5rem" width="100%">
+const cards = [
+  {
+    id: "1",
+    variant: "hover",
+    front: "Hover",
+    back: "Back"
+  },
+  {
+    id: "2",
+    variant: "click",
+    front: "Click",
+    back: "Back"
+  },
+  {
+    id: "3",
+    variant: "focus",
+    front: "Focus",
+    back: "Back"
+  }
+];
+/*
+<MKBox position="fixed" top="0.5rem" width="100%">
         <DefaultNavbar
           routes={routes}
           action={{
@@ -142,6 +169,94 @@ function ContactUs() {
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>
+*/
+
+function ContactUs() {
+  return (
+    <>
+      <Container>
+        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
+          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+            <RotatingCard>
+              <RotatingCardFront
+                image={bgFront}
+                icon="touch_app"
+                title={
+                  <>
+                    Feel the
+                    <br />
+                    Material Kit
+                  </>
+                }
+                description="All the MUI components that you need in a development have been re-design with the new look."
+              />
+              <RotatingCardBack
+                image={bgBack}
+                title="Discover More"
+                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                action={{
+                  type: "internal",
+                  route: "/sections/page-sections/page-headers",
+                  label: "start with header",
+                }}
+              />
+            </RotatingCard>
+          </Grid>
+          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+            <RotatingCard>
+              <RotatingCardFront
+                image={bgFront}
+                icon="touch_app"
+                title={
+                  <>
+                    Feel the
+                    <br />
+                    Material Kit
+                  </>
+                }
+                description="All the MUI components that you need in a development have been re-design with the new look."
+              />
+              <RotatingCardBack
+                image={bgBack}
+                title="Discover More"
+                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                action={{
+                  type: "internal",
+                  route: "/sections/page-sections/page-headers",
+                  label: "start with header",
+                }}
+              />
+            </RotatingCard>
+          </Grid>
+          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+            <RotatingCard>
+              <RotatingCardFront
+                image={bgFront}
+                icon="touch_app"
+                title={
+                  <>
+                    Feel the
+                    <br />
+                    Material Kit
+                  </>
+                }
+                description="All the MUI components that you need in a development have been re-design with the new look."
+              />
+              <RotatingCardBack
+                image={bgBack}
+                title="Discover More"
+                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                action={{
+                  type: "internal",
+                  route: "/sections/page-sections/page-headers",
+                  label: "start with header",
+                }}
+              />
+            </RotatingCard>
+          </Grid>
+        </Grid>
+      </Container>
+      
     </>
   );
 }
