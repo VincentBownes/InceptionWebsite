@@ -12,27 +12,7 @@ function Whitepaper() {
 return(
     
     <>
-    <DefaultNavbar
-      routes={routes}
-      brand = ""
-      center
-    />
-    
-    <MKBox
-      minHeight="100vh"
-      width="100%"
-      sx={{
-        backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
-          `${linearGradient(
-            rgba(gradients.dark.main, 0.6),
-            rgba(gradients.dark.state, 0.6)
-          )}, url(${cloth})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        display: "grid",
-        placeItems: "center",
-      }}
-    >
+    <MKBox>
     <a href path={window.open(process.env.PUBLIC_URL + '/Whitepaper.pdf')}></a>
     </MKBox>
     <Navigate to="/" />
