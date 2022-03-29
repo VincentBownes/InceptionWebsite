@@ -28,8 +28,8 @@ import pxToRem from "assets/theme/functions/pxToRem";
 const { dark } = colors;
 
 const baseProperties = {
-  fontFamily: "'Exo', sans-serif",
-  fontFamily2: '"Exo"',
+  fontFamily: "'Quicksand', sans-serif",
+  fontFamily2: '"Quicksand"',
   fontWeightLighter: 100,
   fontWeightLight: 300,
   fontWeightRegular: 400,
