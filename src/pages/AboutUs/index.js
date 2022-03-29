@@ -34,7 +34,15 @@ import cloth from "assets/images/inceptioncloth.jpg"
 
 function AboutUs() {
   return (
-    <>
+    <div sx={{
+          backgroundImage: `url(${cloth})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          placeItems: "center",
+        }}
+        style={{width:"100%", height:"100%"}}
+        >
+      
       <DefaultNavbar
         routes={routes}
         brand = ""
@@ -135,7 +143,7 @@ function AboutUs() {
         <SimpleFooter />
       </MKBox>
 
-    </>
+    </div>
   );
 }
 

@@ -29,6 +29,7 @@ import team1 from "assets/images/Orange.gif";
 import team2 from "assets/images/Purple.gif";
 import team3 from "assets/images/Green.gif";
 import team4 from "assets/images/White.gif";
+import team5 from "assets/images/Red.gif";
 
 function Team() {
   return (
@@ -54,7 +55,7 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image={team1}
+                image={team5}
                 name="Crypto Chris"
                 position={{ color: "info", label: "Executive Officer" }}
                 description=""
@@ -94,7 +95,7 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image={team4}
+                image={team1}
                 name="Bottom Roller"
                 position={{ color: "info", label: "Tech Guy" }}
                 description=""

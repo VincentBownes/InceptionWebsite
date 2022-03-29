@@ -27,14 +27,15 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
 
-function RotatingCard({ color, image, title, description, action }) {
+
+function RotatingCard({image, title, description, action, instagram, twitter }) {
   return (
     <MKBox
       display="flex"
       justifyContent="center"
       alignItems="center"
       borderRadius="lg"
-      coloredShadow={color}
+      coloredShadow="inceptionPurple"
       position="absolute"
       width="100%"
       height="100%"
@@ -44,8 +45,8 @@ function RotatingCard({ color, image, title, description, action }) {
       sx={{
         backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) =>
           `${linearGradient(
-            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85),
-            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85)
+            rgba(gradients["inceptionPurple"] ? gradients["inceptionPurple"].main : gradients.info.main, 0.85),
+            rgba(gradients["inceptionPurple"] ? gradients["inceptionPurple"].main : gradients.info.main, 0.85)
           )}, url(${image})`,
         backgroundSize: "cover",
         backfaceVisibility: "hidden",
@@ -61,23 +62,16 @@ function RotatingCard({ color, image, title, description, action }) {
         </MKTypography>
         {action && (
           <MKBox width="50%" mt={4} mb={2} mx="auto">
-            {action.type === "external" ? (
-              <MKButton
-                component={MuiLink}
-                href={action.route}
-                target="_blank"
-                rel="noreferrer"
-                color="white"
-                size="small"
-                fullWidth
-              >
-                {action.label}
-              </MKButton>
-            ) : (
-              <MKButton component={Link} to={action.route} color="white" size="small" fullWidth>
-                {action.label}
-              </MKButton>
-            )}
+            <MKBox display="flex" justifyContent="center" alignItems="center">
+                
+                <MKTypography component="a" variant="body1" color="white" href={instagram} mr={3}>
+                  <i className="fab fa-instagram" />
+                </MKTypography>
+                <MKTypography component="a" variant="body1" color="white" href={twitter} mr={3}>
+                  <i className="fab fa-twitter" />
+                </MKTypography>
+                
+              </MKBox>
           </MKBox>
         )}
       </MKBox>

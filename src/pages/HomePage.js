@@ -36,12 +36,13 @@ function HomePage() {
       width="100%"
       back
       sx={{
-        backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
-            `url(${black})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         display: "grid",
         placeItems: "flex-end",
+      }}
+      style={{
+        backgroundColor: 'black',
       }}
     >
       <DefaultNavbar
@@ -115,14 +116,12 @@ function HomePage() {
         </Grid>
       </Container>
 
-      
-      <Grid container spacing={3} alignItems="center">
+      <Grid container spacing={3} sx={{ mt: 8 }} alignItems="center">
         <Grid item xs={12} lg={6}>
           <MKBox
-            display={{ xs: "none", lg: "flex" }}
+            display={{ md: "none", lg:"flex" }}
             width="calc(100% - 4rem)"
             height="calc(100vh - 4rem)"
-            borderRadius="lg"
             ml={2}
             mt={2}
             sx={{ backgroundImage: `url(${justAlien})` }}
@@ -160,10 +159,10 @@ function HomePage() {
               </MKTypography>
             </MKButton>
             <MKBox p={3}>
-              <MKTypography variant="body2" color="text" mb={3}>
+              <MKTypography variant="body2" color="black" mb={3}>
                 To setup a meeting with the team regarding your NFT project, you must first be an owner of one our Aliens. 
               </MKTypography>
-              <MKTypography variant="body2" color="text" mb={3}>
+              <MKTypography variant="body2" color="black" mb={3}>
                 Then, you may fill out this form, email us at helpmelaunch@gmail.com, or contact us through Twitter or Discord.
               </MKTypography>
               <MKBox width="100%" component="form" method="post" autocomplete="off">
@@ -174,6 +173,8 @@ function HomePage() {
                       label="Project Name"
                       InputLabelProps={{ shrink: true }}
                       fullWidth
+                    
+                      
                     />
                   </Grid>
                   <Grid item xs={12} md={6}>
@@ -216,9 +217,7 @@ function HomePage() {
                   <MKButton type="submit" variant="gradient" color="inceptionPurpleGradient">
                     Send Message
                   </MKButton>
-                  <FacebookIcon style={{width:"5%", height:"5vh"}}></FacebookIcon>
-                  <TwitterIcon style={{width:"5%", height:"5vh"}}></TwitterIcon>
-                  <YouTubeIcon style={{width:"5%", height:"5vh"}}></YouTubeIcon>
+                  
                 </Grid>
               </MKBox>
             </MKBox>

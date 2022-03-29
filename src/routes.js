@@ -39,7 +39,7 @@ Coded by www.creative-tim.com
 import HomePage from "pages/HomePage"
 import AboutUs from "pages/AboutUs";
 import Presentation from "layouts/pages/presentation";
-import ContactUs from "pages/LandingPages/ContactUs";
+import Clients from "pages/LandingPages/Clients";
 import SignIn from "pages/LandingPages/SignIn"
 
 // Sections
@@ -49,7 +49,7 @@ import Whitepaper from "pages/Whitepaper";
 const routes = [
   {
     name: "Home",
-    route: "/pages/HomePage.js",
+    route: "/",
     component: <HomePage />,
   },
 
@@ -60,12 +60,12 @@ const routes = [
   },
 
   {
-    name: "Services",
-    route: "/pages/Presentation",
-    component: <ContactUs />,
+    name: "Clients",
+    route: "/Clients",
+    component: <Clients />,
   },
 
-  {
+  /*{
     name: "The Aliens",
     route: "/aliens",
     component: <Presentation />,
@@ -74,7 +74,7 @@ const routes = [
     name: "Launchpad",
     route: "/pages/LandingPages/SignIn",
     component: <SignIn />,
-  },
+  },*/
   {
     name: "Whitepaper",
     route: "/pages/Whitepaper.js",
