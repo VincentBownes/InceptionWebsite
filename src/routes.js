@@ -69,12 +69,12 @@ const routes = [
     name: "The Aliens",
     route: "/aliens",
     component: <Presentation />,
-  },
+  },*/
   {
     name: "Launchpad",
     route: "/pages/LandingPages/SignIn",
     component: <SignIn />,
-  },*/
+  },
   {
     name: "Whitepaper",
     route: "/pages/Whitepaper.js",

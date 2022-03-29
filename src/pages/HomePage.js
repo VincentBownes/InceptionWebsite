@@ -65,7 +65,7 @@ function HomePage() {
       >
       </MKBox>
       <MKBox
-        minHeight="100vh"
+        height="100vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
