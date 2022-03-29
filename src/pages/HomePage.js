@@ -49,9 +49,10 @@ function HomePage() {
         routes={routes}
         brand = ""
         center
+        transparent
       />
       <MKBox
-        minHeight="10vh"
+        minHeight="100vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
@@ -60,23 +61,23 @@ function HomePage() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "grid",
-          placeItems: "flex-end",
+          placeItems: "center",
         }}
       >
+        <Container>
+        <Grid container item xs={12} sm={12} md={12} lg={12}>
+          <MKBox
+              component="img"
+              width="100%"
+              src={vid}
+              sx={{display: "flex", flexDirection: "row", justifyContent: "flex-end"}}
+            >
+            </MKBox>
+        </Grid>
+      </Container>
       </MKBox>
-      <MKBox
-        height="100vh"
-        width="100%"
-        sx={{
-          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
-            `url(${vid})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          display: "grid",
-          placeItems: "flex-end",
-        }}
-      >
-      </MKBox>
+      
+      
 
       <Container>
         <Grid container spacing={3} sx={{ mt: 8 }} alignItems="center">
