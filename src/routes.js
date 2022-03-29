@@ -35,24 +35,21 @@ Coded by www.creative-tim.com
           you can set the columns amount based on this key.
   10. The `rowsPerColumn` key is used to define that how many rows should be in a column.
 */
-
-// @mui material components
-import Icon from "@mui/material/Icon";
-
-// @mui icons
-import GitHubIcon from "@mui/icons-material/GitHub";
-
 // Pages
 import HomePage from "pages/HomePage"
 import AboutUs from "pages/AboutUs";
 import Presentation from "layouts/pages/presentation";
+import Clients from "pages/LandingPages/Clients";
+import SignIn from "pages/LandingPages/SignIn"
+
+// Sections
 import Whitepaper from "pages/Whitepaper";
 
 
 const routes = [
   {
     name: "Home",
-    route: "/pages/HomePage.js",
+    route: "/",
     component: <HomePage />,
   },
 
@@ -63,17 +60,21 @@ const routes = [
   },
 
   {
-    name: "Services",
-    route: "/pages/Presentation",
+    name: "Clients",
+    route: "/Clients",
+    component: <Clients />,
+  },
+
+  /*{
+    name: "The Aliens",
+    route: "/aliens",
     component: <Presentation />,
-  },
-
+  },*/
   {
-    name: "Customers",
-    route: "/pages/HomePage.js",
-    component: <HomePage />,
+    name: "Launchpad",
+    route: "/pages/LandingPages/SignIn",
+    component: <SignIn />,
   },
-
   {
     name: "Whitepaper",
     route: "/pages/Whitepaper.js",

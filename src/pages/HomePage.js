@@ -4,179 +4,230 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
+import MKInput from "components/MKInput";
+import MKButton from "components/MKButton";
+import MKSocialButton from "components/MKSocialButton";
 import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 import DefaultReviewCard from "examples/Cards/ReviewCards/DefaultReviewCard";
-import SimpleFooter from "examples/Footers/SimpleFooter"
+import SimpleFooter from "examples/Footers/SimpleFooter";
 
 // Routes
 import routes from "routes";
 
 // Images
 import cloth from "assets/images/inceptioncloth.jpg"
+import vid from "assets/images/animation.gif"
+import black from "assets/images/black.png"
+import justAlien from "assets/images/justAlien.gif";
 import tank from "assets/images/inceptiontank.gif"
 import logo from "assets/images/inceptionlogo.png"
-import black from "assets/images/inceptionBlackbg.jpg"
+
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import footerRoutes from "footer.routes";
 
 function HomePage() {
   return (
-    <>
+    <MKBox
+      minHeight="100%"
+      width="100%"
+      back
+      sx={{
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        display: "grid",
+        placeItems: "flex-end",
+      }}
+      style={{
+        backgroundColor: 'black',
+      }}
+    >
       <DefaultNavbar
         routes={routes}
         brand = ""
         center
       />
-
       <MKBox
-        minHeight="100vh"
+        minHeight="10vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
-            `${linearGradient(
-              rgba(gradients.dark.main, 0.6),
-              rgba(gradients.dark.state, 0.6)
-            )}, url(${black})`,
+            `url(${black})`,
+
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "grid",
           placeItems: "flex-end",
         }}
       >
-      <Container>
-        <Grid
-          container
-          item
-          direction="column"
-          justifyContent="flex-end"
-          alignItems="flex-end"
-        >
-          <MKTypography variant="h2">Coming soon </MKTypography>
-          <MKTypography variant="h2" color="inceptionPurpleGradient" textGradient mb={2}>
-            1,679,477+ New NFTs
-          </MKTypography>
-        </Grid>
-        <Grid
-          container
-          item
-          direction="column"
-          justifyContent="flex-start"
-          alignItems="flex-start"
-        >
-          <MKBox
-            component="img"
-            width="100%"
-            src={logo}
-            sx={{display: "flex", flexDirection: "row", justifyContent: "flex-end"}}
-          />
-        </Grid>
-      </Container>
       </MKBox>
-
-    <MKBox
-        minHeight="100vh"
+      <MKBox
+        height="100vh"
         width="100%"
         sx={{
-          backgroundImage: `url(${tank})`,
+          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+            `url(${vid})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          display: "flex",
-          alignItems: "flex-end"
+          display: "grid",
+          placeItems: "flex-end",
         }}
       >
+      </MKBox>
+
       <Container>
-        <Grid
-          container
-          item 
-          placeItems="center"
-          sx={{ textAlign: "center"}}
-        >
-          <MKTypography variant="h2" color="light">Welcome! to the Inception website. Important things can go here! text</MKTypography>
+        <Grid container spacing={3} sx={{ mt: 8 }} alignItems="center">
+          <Grid item xs={12} lg={5}>
+            <MKTypography variant="h2"></MKTypography>
+          </Grid>
+          <Grid item xs={12} lg={3}>
+            <MKTypography variant="h2" color="inceptionPurpleGradient" textGradient mb={2}>FAQs</MKTypography>
+          </Grid>
+          <Grid item xs={12} lg={4}>
+            <MKTypography variant="h2"></MKTypography>
+          </Grid>
+          <Grid item xs={12} lg={4}>
+            <FilledInfoCard
+              variant="gradient"
+              color="dark"
+              title="Why Should I Use An Agency"
+              description="Answer 1"
+            />
+          </Grid>
+          <Grid item xs={12} lg={4}>
+            <FilledInfoCard
+              variant="gradient"
+              color="dark"
+              title="What Is An Escrow"
+              description="This is an example answer for what is an escrow. We talk about what an escrow is right here"
+            />
+          </Grid>
+          <Grid item xs={12} lg={4}>
+            <FilledInfoCard
+              variant="gradient"
+              color="dark"
+              title="Another Question"
+              description="Just fucking read the white paper "
+            />
+          </Grid>
         </Grid>
       </Container>
-      </MKBox>
-      
-      <Container>
-          <Grid container spacing={3} sx={{ mt: 8 }}>
-            <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                variant="gradient"
-                color="dark"
-                title="NFTs"
-                description="My first thought was, he lied in every word, That hoary cripple, with malicious eye Askance to watch the workings of his lie"
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                variant="gradient"
-                color="dark"
-                title="Moar NFTs"
-                description="On mine, and mouth scarce able to afford Suppression of the glee, that pursed and scored"
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                variant="gradient"
-                color="dark"
-                title="All the NFTs"
-                description=" Its edge, at one more victim gained thereby. What else should he be set for, with his staff? "
-              />
-            </Grid>
-          </Grid>
-        </Container>
 
-        <MKBox component="section" py={12}>
-      <Container>
+      <Grid container spacing={3} sx={{ mt: 8 }} alignItems="center">
+        <Grid item xs={12} lg={6}>
+          <MKBox
+            display={{ md: "none", lg:"flex" }}
+            width="calc(100% - 4rem)"
+            height="calc(100vh - 4rem)"
+            ml={2}
+            mt={2}
+            sx={{ backgroundImage: `url(${justAlien})` }}
+          />
+        </Grid>
         <Grid
-          container
           item
           xs={12}
+          sm={10}
+          md={7}
           lg={6}
           xl={4}
-          xxl={4}
-          justifyContent="center"
-          sx={{ mx: "auto", textAlign: "center" }}
+          ml={{ xs: "auto", lg: 6 }}
+          mr={{ xs: "auto", lg: 6 }}
         >
-          <MKTypography variant="h2">Road map</MKTypography>
-          <MKTypography variant="h2" color="inceptionPurpleGradient" textGradient mb={2}>
-            Our plan going forward
-          </MKTypography>
-          <MKTypography variant="body1" color="text" mb={2}>
-            We are going to make lots of NFTs and this is where we are going to tell you about them.
-          </MKTypography>
+          <MKBox
+            bgColor="white"
+            borderRadius="xl"
+            shadow="lg"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            mt={{ xs: 20, sm: 18, md: 20 }}
+            mb={{ xs: 20, sm: 18, md: 20 }}
+            mx={3}
+          >
+            <MKButton
+              variant="gradient" color="inceptionPurpleGradient"
+              p={2}
+              mx={2}
+              mt={-3}
+            >
+              <MKTypography variant="h3" color="white">
+                Launch With Us
+              </MKTypography>
+            </MKButton>
+            <MKBox p={3}>
+              <MKTypography variant="body2" color="black" mb={3}>
+                To setup a meeting with the team regarding your NFT project, you must first be an owner of one our Aliens. 
+              </MKTypography>
+              <MKTypography variant="body2" color="black" mb={3}>
+                Then, you may fill out this form, email us at helpmelaunch@gmail.com, or contact us through Twitter or Discord.
+              </MKTypography>
+              <MKBox width="100%" component="form" method="post" autocomplete="off">
+                <Grid container spacing={3}>
+                  <Grid item xs={12} md={6}>
+                    <MKInput
+                      variant="standard"
+                      label="Project Name"
+                      InputLabelProps={{ shrink: true }}
+                      fullWidth
+                    
+                      
+                    />
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <MKInput
+                      variant="standard"
+                      label="Token Address"
+                      InputLabelProps={{ shrink: true }}
+                      fullWidth
+                    />
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <MKInput
+                      variant="standard"
+                      label="Discord"
+                      InputLabelProps={{ shrink: true }}
+                      fullWidth
+                    />
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <MKInput
+                      variant="standard"
+                      label="Twitter"
+                      InputLabelProps={{ shrink: true }}
+                      fullWidth
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <MKInput
+                      variant="standard"
+                      label="What can we help you?"
+                      placeholder="Tell us about your project, your team, and how you would like us to assist you"
+                      InputLabelProps={{ shrink: true }}
+                      multiline
+                      fullWidth
+                      rows={6}
+                    />
+                  </Grid>
+                </Grid>
+                <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
+                  <MKButton type="submit" variant="gradient" color="inceptionPurpleGradient">
+                    Send Message
+                  </MKButton>
+                  
+                </Grid>
+              </MKBox>
+            </MKBox>
+          </MKBox>
         </Grid>
-        <Grid container spacing={3} sx={{ mt: 8 }}>
-          <Grid item xs={12} md={6} lg={4}>
-            <DefaultReviewCard
-              color="light"
-              name="Phase 1"
-              date="3 weeks"
-              review="We are going to do this stuff in phase 1"
-            />
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <DefaultReviewCard
-              color="dark"
-              name="Phase 2"
-              date="4 weeks"
-              review="We are going to do this stuff for phase 2 by the 4 week mark."
-            />
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <DefaultReviewCard
-              color="light"
-              name="Phase 3"
-              date="2 months"
-              review="This is stuff we will do in phase 3 by the 2 month mark"
-            />
-          </Grid>
-        </Grid>
-      </Container>
+      </Grid>
+      <MKBox pt={6} px={1} mt={6}>
+        <SimpleFooter />
+      </MKBox>
     </MKBox>
-    <MKBox pt={6} px={1} mt={6}>
-      <SimpleFooter />
-    </MKBox>
-      </>
   );
 }
 

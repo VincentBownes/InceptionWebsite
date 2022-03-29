@@ -54,7 +54,6 @@ function Presentation() {
         action={{
           type: "external",
           route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "staking",
           color: "info",
         }}
         sticky

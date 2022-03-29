@@ -2,14 +2,10 @@
 =========================================================
 * Material Kit 2 React - v2.0.0
 =========================================================
-
 * Product Page: https://www.creative-tim.com/product/material-kit-react
 * Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
 Coded by www.creative-tim.com
-
  =========================================================
-
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
@@ -38,7 +34,15 @@ import cloth from "assets/images/inceptioncloth.jpg"
 
 function AboutUs() {
   return (
-    <>
+    <div sx={{
+          backgroundImage: `url(${cloth})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          placeItems: "center",
+        }}
+        style={{width:"100%", height:"100%"}}
+        >
+      
       <DefaultNavbar
         routes={routes}
         brand = ""
@@ -105,7 +109,23 @@ function AboutUs() {
           </Grid>
         </Container>
       </MKBox>
-      <Card
+      <MKBox
+        minHeight="100vh"
+        width="100%"
+        sx={{
+          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+            `${linearGradient(
+              rgba(gradients.dark.state, 0.6),
+              rgba(gradients.dark.main, 0.6)
+              
+            )}, url(${cloth})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "grid",
+          placeItems: "center",
+        }}
+      >
+        <Card
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
@@ -116,11 +136,14 @@ function AboutUs() {
       >
         <Team />
       </Card>
+
+      </MKBox>
+      
       <MKBox pt={6} px={1} mt={6}>
         <SimpleFooter />
       </MKBox>
 
-    </>
+    </div>
   );
 }
 

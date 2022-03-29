@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #f35 0%,
+    #43e 100%
+  );
+}
+
+.container {
+  height: 100vh;
+}
+
+.flip-card-outer {
+  width: 300px;
+  height: 400px;
+  margin: 25px 0;
+}

@@ -23,6 +23,7 @@ import Card from "@mui/material/Card";
 import Switch from "@mui/material/Switch";
 import Grid from "@mui/material/Grid";
 import MuiLink from "@mui/material/Link";
+import Container from "@mui/material/Container";
 
 // @mui icons
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -41,131 +42,76 @@ import SimpleFooter from "examples/Footers/SimpleFooter";
 
 // Material Kit 2 React page layout routes
 import routes from "routes";
+import team5 from "assets/images/Red.gif";
+import tank from "assets/images/inceptiontank.gif";
 
-// Images
-import bgImage from "assets/images/bg-sign-in-basic.jpeg";
+//Cards
+import RotatingCard from "examples/Cards/RotatingCard";
+import BackgroundBlogCard from "examples/Cards/BlogCards/BackgroundBlogCard";
+import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
+import TransparentBlogCard from "examples/Cards/BlogCards/TransparentBlogCard";
+import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
+import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
+import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+import DefaultReviewCard from "examples/Cards/ReviewCards/DefaultReviewCard";
+import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
 
 function SignInBasic() {
-  const [rememberMe, setRememberMe] = useState(false);
 
-  const handleSetRememberMe = () => setRememberMe(!rememberMe);
 
   return (
     <>
       <DefaultNavbar
         routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "info",
-        }}
-        transparent
-        light
+        center
       />
-      <MKBox
-        position="absolute"
-        top={0}
-        left={0}
-        zIndex={1}
+      <div style={{height:"100px", width:"100%"}}>
+
+      </div>
+
+      
+      
+      <MKBox 
+        height="100vh"
         width="100%"
-        minHeight="100vh"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
-            `${linearGradient(
-              rgba(gradients.dark.main, 0.6),
-              rgba(gradients.dark.state, 0.6)
-            )}, url(${bgImage})`,
+            `url(${tank})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+          display: "grid",
+          placeItems: "flex-end",
         }}
-      />
-      <MKBox px={1} width="100%" height="100vh" mx="auto" position="relative" zIndex={2}>
-        <Grid container spacing={1} justifyContent="center" alignItems="center" height="100%">
-          <Grid item xs={11} sm={9} md={5} lg={4} xl={3}>
-            <Card>
-              <MKBox
-                variant="gradient"
-                bgColor="info"
-                borderRadius="lg"
-                coloredShadow="info"
-                mx={2}
-                mt={-3}
-                p={2}
-                mb={1}
-                textAlign="center"
-              >
-                <MKTypography variant="h4" fontWeight="medium" color="white" mt={1}>
-                  Sign in
-                </MKTypography>
-                <Grid container spacing={3} justifyContent="center" sx={{ mt: 1, mb: 2 }}>
-                  <Grid item xs={2}>
-                    <MKTypography component={MuiLink} href="#" variant="body1" color="white">
-                      <FacebookIcon color="inherit" />
-                    </MKTypography>
-                  </Grid>
-                  <Grid item xs={2}>
-                    <MKTypography component={MuiLink} href="#" variant="body1" color="white">
-                      <GitHubIcon color="inherit" />
-                    </MKTypography>
-                  </Grid>
-                  <Grid item xs={2}>
-                    <MKTypography component={MuiLink} href="#" variant="body1" color="white">
-                      <GoogleIcon color="inherit" />
-                    </MKTypography>
-                  </Grid>
-                </Grid>
-              </MKBox>
-              <MKBox pt={4} pb={3} px={3}>
-                <MKBox component="form" role="form">
-                  <MKBox mb={2}>
-                    <MKInput type="email" label="Email" fullWidth />
-                  </MKBox>
-                  <MKBox mb={2}>
-                    <MKInput type="password" label="Password" fullWidth />
-                  </MKBox>
-                  <MKBox display="flex" alignItems="center" ml={-1}>
-                    <Switch checked={rememberMe} onChange={handleSetRememberMe} />
-                    <MKTypography
-                      variant="button"
-                      fontWeight="regular"
-                      color="text"
-                      onClick={handleSetRememberMe}
-                      sx={{ cursor: "pointer", userSelect: "none", ml: -1 }}
-                    >
-                      &nbsp;&nbsp;Remember me
-                    </MKTypography>
-                  </MKBox>
-                  <MKBox mt={4} mb={1}>
-                    <MKButton variant="gradient" color="info" fullWidth>
-                      sign in
-                    </MKButton>
-                  </MKBox>
-                  <MKBox mt={3} mb={1} textAlign="center">
-                    <MKTypography variant="button" color="text">
-                      Don&apos;t have an account?{" "}
-                      <MKTypography
-                        component={Link}
-                        to="/authentication/sign-up/cover"
-                        variant="button"
-                        color="info"
-                        fontWeight="medium"
-                        textGradient
-                      >
-                        Sign up
-                      </MKTypography>
-                    </MKTypography>
-                  </MKBox>
-                </MKBox>
-              </MKBox>
-            </Card>
-          </Grid>
-        </Grid>
+        
+        >
+          
+        
+          <Card style={{width:"500px", height:"35%", marginBottom:"50%", marginTop:"50%", marginRight:"10%", justifyContent:"center"}}>
+            <MKButton color="inceptionPurple" style={{width:"250px", marginRight:"5%"}}>
+              Connect Wallet
+            </MKButton>
+            
+          </Card>
       </MKBox>
-      <MKBox width="100%" position="absolute" zIndex={2} bottom="1.625rem">
-        <SimpleFooter light />
-      </MKBox>
+      <Container>
+          <MKTypography>Upcoming Launches</MKTypography>
+          <Grid container item xs={11} spacing={3} alignItems="left" >
+            <Grid item xs={12} lg={4} >
+              <BackgroundBlogCard
+              image={team5}
+              title="Inception Aliens"
+              description="May 7th, 2022 5pm EST"
+              action={{
+                type: "external",
+                route: "https://launchpad.inceptionaio.com",
+                label: "Launch Pad",
+              }}
+            />
+            </Grid>
+            
+            </Grid>
+        </Container>
+      
     </>
   );
 }
