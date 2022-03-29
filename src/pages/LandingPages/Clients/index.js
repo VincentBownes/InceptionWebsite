@@ -47,13 +47,7 @@ import bgImage from "assets/images/illustrations/illustration-reset.jpg";
 function ContactUs() {
   return (
     <>
-      <div style={{
-        backgroundColor: 'black',
-        position:'fixed',
-        width:'100%',
-        height:'100%',
-
-      }}>
+      
         <DefaultNavbar
           routes={routes}
           brand = ""
@@ -143,7 +137,6 @@ function ContactUs() {
             </Grid>
           </Grid>
         </Container>
-      </div>
       
     </>
   );
