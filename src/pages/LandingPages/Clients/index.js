@@ -19,18 +19,12 @@ import Container from "@mui/material/Container";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
-import CustomerCard from "components/CustomerCard";
 import RotatingCard from "examples/Cards/RotatingCard";
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
@@ -40,9 +34,6 @@ import HungryApes from "assets/images/HungryApes.jpeg";
 import solardex from "assets/images/solardex.jpeg";
 import hangoverbears from "assets/images/hangoverbears.jpg";
 
-
-// Image
-import bgImage from "assets/images/illustrations/illustration-reset.jpg";
 
 function ContactUs() {
   return (
@@ -64,12 +55,9 @@ function ContactUs() {
               <RotatingCard>
                 <RotatingCardFront
                   image={solardex}
-                  title={
-                    <>
-                      Solar Dex
-                    </>
-                  }
+                  title="Solar Dex"
                   description="Quick Description"
+                  color="inceptionPurpleGradient"
                 />
                 <RotatingCardBack
                   image={solardex}
@@ -89,12 +77,9 @@ function ContactUs() {
               <RotatingCard>
                 <RotatingCardFront
                   image={hangoverbears}
-                  title={
-                    <>
-                      Hangover Bears
-                    </>
-                  }
+                  title="Hangover Bears"
                   description="Quick Description"
+                  color="inceptionPurpleGradient"
                 />
                 <RotatingCardBack
                   image={hangoverbears}
@@ -114,12 +99,9 @@ function ContactUs() {
               <RotatingCard>
                 <RotatingCardFront
                   image={HungryApes}
-                  title={
-                    <>
-                      Hungry Apes
-                    </>
-                  }
+                  title="Hungry Apes"
                   description="Quick Description"
+                  color="inceptionPurpleGradient"
                 />
                 <RotatingCardBack
                   image={HungryApes}
