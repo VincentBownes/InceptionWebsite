@@ -12,17 +12,22 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 import DefaultReviewCard from "examples/Cards/ReviewCards/DefaultReviewCard";
 import SimpleFooter from "examples/Footers/SimpleFooter";
+import RotatingCard from "examples/Cards/RotatingCard";
+import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
+import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
+
+
 
 // Routes
 import routes from "routes";
 
 // Images
-import cloth from "assets/images/inceptioncloth.jpg"
 import vid from "assets/images/animation.gif"
 import black from "assets/images/black.png"
 import justAlien from "assets/images/justAlien.gif";
-import tank from "assets/images/inceptiontank.gif"
-import logo from "assets/images/inceptionlogo.png"
+import HungryApes from "assets/images/HungryApes.jpeg";
+import solardex from "assets/images/solardex.jpeg";
+import hangoverbears from "assets/images/hangoverbears.jpg";
 
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -76,16 +81,10 @@ function HomePage() {
       
 
       <Container>
+        <Grid container item sx={{ mt: 8 }} xs={12} lg={3} alignItems="center" direction="column">
+          <MKTypography variant="h2" color="inceptionPurpleGradient" textGradient mb={2}>FAQs</MKTypography>
+        </Grid>
         <Grid container spacing={3} sx={{ mt: 8 }} alignItems="center">
-          <Grid item xs={12} lg={5}>
-            <MKTypography variant="h2"></MKTypography>
-          </Grid>
-          <Grid item xs={12} lg={3}>
-            <MKTypography variant="h2" color="inceptionPurpleGradient" textGradient mb={2}>FAQs</MKTypography>
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <MKTypography variant="h2"></MKTypography>
-          </Grid>
           <Grid item xs={12} lg={4}>
             <FilledInfoCard
               variant="gradient"
@@ -112,6 +111,82 @@ function HomePage() {
           </Grid>
         </Grid>
       </Container>
+
+      <Container>
+      <Grid container item sx={{ mt: 16 }} xs={12} lg={3} alignItems="center" direction="column">
+          <MKTypography variant="h2" color="light" textGradient mb={2}>Meet some of our current clients</MKTypography>
+        </Grid>
+        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto",  mt: 8 }}>
+          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+            <RotatingCard>
+              <RotatingCardFront
+                image={solardex}
+                title="Solar Dex"
+                description="Quick Description"
+                color="inceptionPurpleGradient"
+              />
+              <RotatingCardBack
+                image={solardex}
+                title="Launch Date"
+                description="April 28th, 5:00PM EST"
+                action={{
+                  type: "internal",
+                  route: "/sections/page-sections/page-headers",
+                  label: "start with header",
+                }}
+                instagram="https://instagram.com"
+                twitter="https://twitter.com"
+              />
+            </RotatingCard>
+          </Grid>
+          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+            <RotatingCard>
+              <RotatingCardFront
+                image={hangoverbears}
+                title="Hangover Bears"
+                description="Quick Description"
+                color="inceptionPurpleGradient"
+              />
+              <RotatingCardBack
+                image={hangoverbears}
+                title="Launch Date"
+                description="Early June"
+                action={{
+                  type: "internal",
+                  route: "/sections/page-sections/page-headers",
+                  label: "start with header",
+                }}
+                instagram="https://instagram.com"
+                twitter="https://twitter.com"
+              />
+            </RotatingCard>
+          </Grid>
+          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+            <RotatingCard>
+              <RotatingCardFront
+                image={HungryApes}
+                title="Hungry Apes"
+                description="Quick Description"
+                color="inceptionPurpleGradient"
+              />
+              <RotatingCardBack
+                image={HungryApes}
+                title="Launch Date"
+                description="Late May"
+                action={{
+                  type: "internal",
+                  route: "/sections/page-sections/page-headers",
+                  label: "start with header",
+                }}
+                instagram="https://instagram.com"
+                twitter="https://twitter.com"
+              />
+            </RotatingCard>
+          </Grid>
+        </Grid>
+      </Container>
+
+
 
       <Grid container spacing={3} sx={{ mt: 8 }} alignItems="center">
         <Grid item xs={12} lg={6}>

@@ -38,7 +38,6 @@ import hangoverbears from "assets/images/hangoverbears.jpg";
 function ContactUs() {
   return (
     <>
-      
         <DefaultNavbar
           routes={routes}
           brand = ""
