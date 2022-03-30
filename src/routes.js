@@ -40,6 +40,8 @@ import HomePage from "pages/HomePage"
 import AboutUs from "pages/AboutUs";
 import Clients from "pages/LandingPages/Clients";
 import SignIn from "pages/LandingPages/SignIn"
+import Solardex from "pages/LandingPages/Launchpads/solarlaunch"
+import Services from "layouts/pages/presentation"
 
 // Sections
 import Whitepaper from "pages/Whitepaper";
@@ -65,6 +67,16 @@ const routes = [
     name: "Launchpad",
     route: "/pages/LandingPages/SignIn",
     component: <SignIn />,
+  },
+  {
+    name: "Solarlaunch",
+    route: "/solardex",
+    component: <Solardex />
+  },
+  {
+    name: "Services",
+    route: "/services",
+    component: <Services />
   },
   {
     name: "Whitepaper",
