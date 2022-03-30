@@ -81,8 +81,8 @@ function HomePage() {
       
 
       <Container>
-        <Grid container item sx={{ mt: 8 }} xs={12} lg={3} alignItems="center" direction="column">
-          <MKTypography variant="h2" color="inceptionPurpleGradient" textGradient mb={2}>FAQs</MKTypography>
+        <Grid container item sx={{ mt: 8 }} alignItems="center" direction="column">
+          <MKTypography variant="h2" alignText="center" color="inceptionPurpleGradient" textGradient mb={2}>FAQs</MKTypography>
         </Grid>
         <Grid container spacing={3} sx={{ mt: 8 }} alignItems="center">
           <Grid item xs={12} lg={4}>
@@ -113,7 +113,7 @@ function HomePage() {
       </Container>
 
       <Container>
-      <Grid container item sx={{ mt: 16 }} xs={12} lg={3} alignItems="center" direction="column">
+      <Grid container item sx={{ mt: 16 }} alignItems="center" direction="column">
           <MKTypography variant="h2" color="light" textGradient mb={2}>Meet some of our current clients</MKTypography>
         </Grid>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto",  mt: 8 }}>
