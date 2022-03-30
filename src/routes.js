@@ -38,7 +38,6 @@ Coded by www.creative-tim.com
 // Pages
 import HomePage from "pages/HomePage"
 import AboutUs from "pages/AboutUs";
-import Presentation from "layouts/pages/presentation";
 import Clients from "pages/LandingPages/Clients";
 import SignIn from "pages/LandingPages/SignIn"
 
@@ -52,24 +51,16 @@ const routes = [
     route: "/",
     component: <HomePage />,
   },
-
   {
     name: "About Us",
     route: "/pages/AboutUs",
     component: <AboutUs />,
   },
-
   {
     name: "Clients",
     route: "/Clients",
     component: <Clients />,
   },
-
-  /*{
-    name: "The Aliens",
-    route: "/aliens",
-    component: <Presentation />,
-  },*/
   {
     name: "Launchpad",
     route: "/pages/LandingPages/SignIn",

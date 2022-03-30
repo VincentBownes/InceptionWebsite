@@ -150,7 +150,7 @@ function DefaultNavbarMobile({ routes, open }) {
 
   return (
     <Collapse in={Boolean(open)} timeout="auto" unmountOnExit>
-      <MKBox width="calc(100% + 1.625rem)" my={2} ml={-2}>
+      <MKBox width="calc(100% + 1.625rem)" my={2} ml={-2} bgColor="dark">
         {renderNavbarItems}
       </MKBox>
     </Collapse>

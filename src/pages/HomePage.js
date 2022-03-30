@@ -64,8 +64,6 @@ function HomePage() {
           placeItems: "center",
         }}
       >
-        <Container>
-        <Grid container item xs={12} sm={12} md={12} lg={12}>
           <MKBox
               component="img"
               width="100%"
@@ -73,8 +71,6 @@ function HomePage() {
               sx={{display: "flex", flexDirection: "row", justifyContent: "flex-end"}}
             >
             </MKBox>
-        </Grid>
-      </Container>
       </MKBox>
       
       

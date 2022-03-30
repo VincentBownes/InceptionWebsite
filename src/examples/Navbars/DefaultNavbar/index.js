@@ -179,7 +179,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
           </MKBox>
         </MKBox>
         <MKBox
-          bgColor={transparent ? "white" : "transparent"}
+          bgColor={transparent ? "dark" : "transparent"}
           shadow={transparent ? "lg" : "none"}
           borderRadius="xl"
           px={transparent ? 2 : 0}
