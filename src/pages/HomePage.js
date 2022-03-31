@@ -78,39 +78,6 @@ function HomePage() {
             </MKBox>
       </MKBox>
       
-      
-
-      <Container>
-        <Grid container item sx={{ mt: 8 }} alignItems="center" direction="column">
-          <MKTypography variant="h2" alignText="center" color="inceptionPurpleGradient" textGradient mb={2}>FAQs</MKTypography>
-        </Grid>
-        <Grid container spacing={3} sx={{ mt: 8 }} alignItems="center">
-          <Grid item xs={12} lg={4}>
-            <FilledInfoCard
-              variant="gradient"
-              color="dark"
-              title="Why Should I Use An Agency"
-              description="Answer 1"
-            />
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <FilledInfoCard
-              variant="gradient"
-              color="dark"
-              title="What Is An Escrow"
-              description="This is an example answer for what is an escrow. We talk about what an escrow is right here"
-            />
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <FilledInfoCard
-              variant="gradient"
-              color="dark"
-              title="Another Question"
-              description="Just fucking read the white paper "
-            />
-          </Grid>
-        </Grid>
-      </Container>
 
       <Container>
       <Grid container item sx={{ mt: 16 }} alignItems="center" direction="column">
@@ -185,8 +152,6 @@ function HomePage() {
           </Grid>
         </Grid>
       </Container>
-
-
 
       <Grid container spacing={3} sx={{ mt: 8 }} alignItems="center">
         <Grid item xs={12} lg={6}>

@@ -39,6 +39,7 @@ Coded by www.creative-tim.com
 import HomePage from "pages/HomePage"
 import AboutUs from "pages/AboutUs";
 import Clients from "pages/LandingPages/Clients";
+import FAQs from "pages/FAQs";
 import SignIn from "pages/LandingPages/SignIn"
 
 // Sections
@@ -57,14 +58,9 @@ const routes = [
     component: <AboutUs />,
   },
   {
-    name: "Clients",
-    route: "/Clients",
-    component: <Clients />,
-  },
-  {
-    name: "Launchpad",
-    route: "/pages/LandingPages/SignIn",
-    component: <SignIn />,
+    name: "FAQs",
+    route: "/FAQs",
+    component: <FAQs />,
   },
   {
     name: "Whitepaper",

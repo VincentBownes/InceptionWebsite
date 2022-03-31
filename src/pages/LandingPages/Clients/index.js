@@ -42,6 +42,7 @@ function ContactUs() {
           routes={routes}
           brand = ""
           center
+          transparent
         />
         <MKBox
           minHeight="10vh"
