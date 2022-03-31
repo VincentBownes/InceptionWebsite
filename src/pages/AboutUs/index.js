@@ -47,6 +47,7 @@ function AboutUs() {
         routes={routes}
         brand = ""
         center
+        transparent
       />
       
       <MKBox
