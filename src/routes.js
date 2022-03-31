@@ -41,11 +41,10 @@ import AboutUs from "pages/AboutUs";
 import Clients from "pages/LandingPages/Clients";
 import SignIn from "pages/LandingPages/SignIn"
 import Solardex from "pages/LandingPages/Launchpads/solarlaunch"
-import Services from "layouts/pages/presentation"
+import Services from "layouts/pages/services"
 
 // Sections
 import Whitepaper from "pages/Whitepaper";
-
 
 const routes = [
   {
@@ -84,5 +83,6 @@ const routes = [
     component: <Whitepaper />,
   }
 ];
+
 
 export default routes;
