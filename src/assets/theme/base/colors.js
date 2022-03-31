@@ -255,6 +255,11 @@ export default {
       background: "#8097bf",
       text: "#1e2e4a",
     },
+
+    inceptionPurple: {
+      main: "#6b02a2",
+      focus: "#6b02a2",
+    },
   },
 
   coloredShadows: {
@@ -266,6 +271,7 @@ export default {
     error: "#f44336",
     light: "#adb5bd",
     dark: "#404040",
+    inceptionPurple: "#6b02a2"
   },
 
   inputBorderColor: "#d2d6da",

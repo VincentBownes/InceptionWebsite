@@ -35,7 +35,7 @@ function RotatingCard({image, title, description, action, instagram, twitter }) 
       justifyContent="center"
       alignItems="center"
       borderRadius="lg"
-      coloredShadow="inceptionPurple"
+      coloredShadow="dark"
       position="absolute"
       width="100%"
       height="100%"
@@ -45,8 +45,8 @@ function RotatingCard({image, title, description, action, instagram, twitter }) 
       sx={{
         backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) =>
           `${linearGradient(
-            rgba(gradients["inceptionPurple"] ? gradients["inceptionPurple"].main : gradients.info.main, 0.85),
-            rgba(gradients["inceptionPurple"] ? gradients["inceptionPurple"].main : gradients.info.main, 0.85)
+            rgba(gradients["dark"] ? gradients["dark"].main : gradients.info.main, 0.85),
+            rgba(gradients["dark"] ? gradients["dark"].main : gradients.info.main, 0.85)
           )}, url(${image})`,
         backgroundSize: "cover",
         backfaceVisibility: "hidden",
@@ -81,13 +81,13 @@ function RotatingCard({image, title, description, action, instagram, twitter }) 
 
 // Setting default props for the RotatingCard
 RotatingCard.defaultProps = {
-  color: "info",
+  color: "dark",
 };
 
 // Typechecking props for the RotatingCard
 RotatingCard.propTypes = {
   color: PropTypes.oneOf([
-    "primary",
+   "primary",
     "secondary",
     "info",
     "success",
@@ -95,6 +95,7 @@ RotatingCard.propTypes = {
     "error",
     "dark",
     "light",
+    "inceptionPurple",
   ]),
   image: PropTypes.string.isRequired,
   title: PropTypes.node.isRequired,

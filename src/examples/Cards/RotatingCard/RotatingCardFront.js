@@ -19,9 +19,14 @@ import PropTypes from "prop-types";
 // @mui material components
 import Icon from "@mui/material/Icon";
 
+// colors assets
+import colors from "assets/theme/base/colors";
+
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+
+const { primary } = colors
 
 function RotatingCardFront({ color, image, icon, title, description }) {
   return (
@@ -63,7 +68,7 @@ function RotatingCardFront({ color, image, icon, title, description }) {
 
 // Setting default props for the RotatingCardFront
 RotatingCardFront.defaultProps = {
-  color: "info",
+  color: "dark",
   icon: "",
 };
 
@@ -78,6 +83,7 @@ RotatingCardFront.propTypes = {
     "error",
     "dark",
     "light",
+    "inceptionPurpleGradient",
   ]),
   image: PropTypes.string.isRequired,
   icon: PropTypes.node,
