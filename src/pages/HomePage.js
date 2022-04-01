@@ -168,7 +168,7 @@ function HomePage() {
       <Grid
         item
         xs={12}
-        sm={10}
+        sm={12}
         md={7}
         lg={6}
         xl={4}
