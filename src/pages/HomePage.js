@@ -153,118 +153,119 @@ function HomePage() {
         </Grid>
       </Container>
 
-      <Grid container spacing={3} sx={{ mt: 8 }} alignItems="center">
-        <Grid item xs={12} lg={6}>
-          <MKBox
-            display={{ md: "none", lg:"flex" }}
-            width="calc(100% - 4rem)"
-            height="calc(100vh - 4rem)"
-            ml={2}
-            mt={2}
-            sx={{ backgroundImage: `url(${justAlien})` }}
-          />
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={10}
-          md={7}
-          lg={6}
-          xl={4}
-          ml={{ xs: "auto", lg: 6 }}
-          mr={{ xs: "auto", lg: 6 }}
+
+    <Container>
+    <Grid container sx={{ mt: 8 }} alignItems="center">
+      <Grid item xs={12} sm={12} md={5} lg={6} xl={8}>
+        <MKBox
+          component="img"
+          width="100%"
+          src={justAlien}
+          sx={{display: "flex", flexDirection: "column", justifyContent: "flex-end"}}
         >
-          <MKBox
-            bgColor="white"
-            borderRadius="xl"
-            shadow="lg"
-            display="flex"
-            flexDirection="column"
-            justifyContent="center"
-            mt={{ xs: 20, sm: 18, md: 20 }}
-            mb={{ xs: 20, sm: 18, md: 20 }}
-            mx={3}
+        </MKBox>
+      </Grid>
+      <Grid
+        item
+        xs={12}
+        sm={10}
+        md={7}
+        lg={6}
+        xl={4}
+      >
+        <MKBox
+          bgColor="white"
+          borderRadius="xl"
+          shadow="lg"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          mt={{ xs: 20, sm: 18, md: 20 }}
+          mb={{ xs: 20, sm: 18, md: 20 }}
+          mx={3}
+        >
+          <MKButton
+            variant="gradient" color="inceptionPurpleGradient"
+            p={2}
+            mx={2}
+            mt={-3}
           >
-            <MKButton
-              variant="gradient" color="inceptionPurpleGradient"
-              p={2}
-              mx={2}
-              mt={-3}
-            >
-              <MKTypography variant="h3" color="white">
-                Launch With Us
-              </MKTypography>
-            </MKButton>
-            <MKBox p={3}>
-              <MKTypography variant="body2" color="black" mb={3}>
-                To setup a meeting with the team regarding your NFT project, you must first be an owner of one our Aliens. 
-              </MKTypography>
-              <MKTypography variant="body2" color="black" mb={3}>
-                Then, you may fill out this form, email us at helpmelaunch@gmail.com, or contact us through Twitter or Discord.
-              </MKTypography>
-              <MKBox width="100%" component="form" method="post" autocomplete="off">
-                <Grid container spacing={3}>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      variant="standard"
-                      label="Project Name"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    
-                      
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      variant="standard"
-                      label="Token Address"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      variant="standard"
-                      label="Discord"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      variant="standard"
-                      label="Twitter"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <MKInput
-                      variant="standard"
-                      label="What can we help you?"
-                      placeholder="Tell us about your project, your team, and how you would like us to assist you"
-                      InputLabelProps={{ shrink: true }}
-                      multiline
-                      fullWidth
-                      rows={6}
-                    />
-                  </Grid>
-                </Grid>
-                <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
-                  <MKButton type="submit" variant="gradient" color="inceptionPurpleGradient">
-                    Send Message
-                  </MKButton>
+            <MKTypography variant="h3" color="white">
+              Launch With Us
+            </MKTypography>
+          </MKButton>
+          <MKBox p={3}>
+            <MKTypography variant="body2" color="black" mb={3}>
+              To setup a meeting with the team regarding your NFT project, you must first be an owner of one our Aliens. 
+            </MKTypography>
+            <MKTypography variant="body2" color="black" mb={3}>
+              Then, you may fill out this form, email us at helpmelaunch@gmail.com, or contact us through Twitter or Discord.
+            </MKTypography>
+            <MKBox width="100%" component="form" method="post" autocomplete="off">
+              <Grid container spacing={3}>
+                <Grid item xs={12} md={6}>
+                  <MKInput
+                    variant="standard"
+                    label="Project Name"
+                    InputLabelProps={{ shrink: true }}
+                    fullWidth
                   
+                    
+                  />
                 </Grid>
-              </MKBox>
+                <Grid item xs={12} md={6}>
+                  <MKInput
+                    variant="standard"
+                    label="Token Address"
+                    InputLabelProps={{ shrink: true }}
+                    fullWidth
+                  />
+                </Grid>
+                <Grid item xs={12} md={6}>
+                  <MKInput
+                    variant="standard"
+                    label="Discord"
+                    InputLabelProps={{ shrink: true }}
+                    fullWidth
+                  />
+                </Grid>
+                <Grid item xs={12} md={6}>
+                  <MKInput
+                    variant="standard"
+                    label="Twitter"
+                    InputLabelProps={{ shrink: true }}
+                    fullWidth
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <MKInput
+                    variant="standard"
+                    label="What can we help you?"
+                    placeholder="Tell us about your project, your team, and how you would like us to assist you"
+                    InputLabelProps={{ shrink: true }}
+                    multiline
+                    fullWidth
+                    rows={6}
+                  />
+                </Grid>
+              </Grid>
+              <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
+                <MKButton type="submit" variant="gradient" color="inceptionPurpleGradient">
+                  Send Message
+                </MKButton>
+                
+              </Grid>
             </MKBox>
           </MKBox>
-        </Grid>
+        </MKBox>
       </Grid>
-      <MKBox pt={6} px={1} mt={6}>
-        <SimpleFooter />
-      </MKBox>
+    </Grid>
+    </Container>
+
+    <MKBox pt={6} px={1} mt={6}>
+      <SimpleFooter />
     </MKBox>
+  </MKBox>
   );
 }
 
