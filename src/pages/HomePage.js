@@ -15,6 +15,7 @@ import SimpleFooter from "examples/Footers/SimpleFooter";
 import RotatingCard from "examples/Cards/RotatingCard";
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
+import Icon from "@mui/material/Icon";
 
 
 
@@ -261,6 +262,209 @@ function HomePage() {
       </Grid>
     </Grid>
     </Container>
+
+
+  <Container>
+    <Grid item container justifyContent="center" mt={8}>
+      <MKBox>
+        <MKTypography variant="h1" fontWeight="bold" color="inceptionLightPurple" align="center">
+          Create your NFTs with us
+        </MKTypography>
+        <MKTypography variant="body1" color="white" align="center">
+          Brief description of things
+        </MKTypography>
+      </MKBox>
+    </Grid>
+  </Container>
+
+
+  <Container>
+    <Grid container justifyContent="center" direction="row" spacing={4} mt={8}>
+      
+      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+      <MKBox 
+          bgColor="dark"
+          borderRadius="xl"
+          shadow="lg"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+        >
+          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
+        </MKBox>
+      </Grid>
+
+      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+      <MKBox 
+          bgColor="dark"
+          borderRadius="xl"
+          shadow="lg"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+        >
+          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
+        </MKBox>
+      </Grid>
+
+      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+      <MKBox 
+          bgColor="dark"
+          borderRadius="xl"
+          shadow="lg"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+        >
+          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
+        </MKBox>
+      </Grid>
+
+      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+      <MKBox 
+          bgColor="dark"
+          borderRadius="xl"
+          shadow="lg"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+        >
+          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
+        </MKBox>
+      </Grid>
+
+    </Grid>
+
+
+
+    <Grid container justifyContent="center" direction="row" spacing={4} mt={8}>
+      
+      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+      <MKBox 
+          bgColor="dark"
+          borderRadius="xl"
+          shadow="lg"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+        >
+          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
+        </MKBox>
+      </Grid>
+
+      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+      <MKBox 
+          bgColor="dark"
+          borderRadius="xl"
+          shadow="lg"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+        >
+          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
+        </MKBox>
+      </Grid>
+
+      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+      <MKBox 
+          bgColor="dark"
+          borderRadius="xl"
+          shadow="lg"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+        >
+          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
+        </MKBox>
+      </Grid>
+
+      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+      <MKBox 
+          bgColor="dark"
+          borderRadius="xl"
+          shadow="lg"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+        >
+          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
+        </MKBox>
+        <MKBox>
+          <MKTypography variant="body1" color="white" align="center" fontSize="small">This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
+        </MKBox>
+      </Grid>
+
+    </Grid>
+
+  </Container>
+
+  <Container>
+    <Grid container justifyContent="center" direction="row" spacing={4} mt={8}>
+      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+        <MKBox
+          width="100%"
+          minHeight="50vh"
+          color="white"
+          bgColor="inceptionPurpleGradient"
+          variant="gradient"
+          borderRadius="lg"
+          shadow="lg"
+          opacity={1}
+          p={2}
+        >
+          Box
+        </MKBox>
+      </Grid>
+    </Grid>
+  </Container>
+
+
+
 
     <MKBox pt={6} px={1} mt={6}>
       <SimpleFooter />
