@@ -26,9 +26,12 @@ import MuiLink from "@mui/material/Link";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
+import LanguageIcon from '@mui/icons-material/Language';
+import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import discordIcon from "assets/images/shapes/discord.png"
 
 
-function RotatingCard({image, title, description, action, instagram, twitter }) {
+function RotatingCard({image, title, description, action, website, twitter, discord, launchpad }) {
   return (
     <MKBox
       display="flex"
@@ -64,11 +67,17 @@ function RotatingCard({image, title, description, action, instagram, twitter }) 
           <MKBox width="50%" mt={4} mb={2} mx="auto">
             <MKBox display="flex" justifyContent="center" alignItems="center">
                 
-                <MKTypography component="a" variant="body1" color="white" href={instagram} mr={3}>
-                  <i className="fab fa-instagram" />
+                <MKTypography component="a" variant="body1" color="white" href={website} mr={3}>
+                  <LanguageIcon/>
                 </MKTypography>
                 <MKTypography component="a" variant="body1" color="white" href={twitter} mr={3}>
                   <i className="fab fa-twitter" />
+                </MKTypography>
+                <MKTypography component="a" variant="body1" color="white" href={discord} mr={3}>
+                  <img src={discordIcon} height="30vh"></img>
+                </MKTypography>
+                <MKTypography component="a" variant="body1" color="white" href={launchpad} mr={3}>
+                  <RocketLaunchIcon/>
                 </MKTypography>
                 
               </MKBox>

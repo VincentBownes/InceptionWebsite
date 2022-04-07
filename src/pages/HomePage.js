@@ -30,9 +30,16 @@ import HungryApes from "assets/images/HungryApes.jpeg";
 import solardex from "assets/images/solardex.jpeg";
 import hangoverbears from "assets/images/hangoverbears.jpg";
 
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
+import BeenhereIcon from '@mui/icons-material/Beenhere';
+import GroupsIcon from '@mui/icons-material/Groups';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import LocalAtmIcon from '@mui/icons-material/LocalAtm';
+import ColorLensIcon from '@mui/icons-material/ColorLens';
+import CodeIcon from '@mui/icons-material/Code';
+
+
 import footerRoutes from "footer.routes";
 
 function HomePage() {
@@ -80,390 +87,244 @@ function HomePage() {
       </MKBox>
       
 
-      <Container>
-      <Grid container item sx={{ mt: 16 }} alignItems="center" direction="column">
-          <MKTypography variant="h2" color="light" textGradient mb={2}>Meet some of our current clients</MKTypography>
-        </Grid>
-        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto",  mt: 8 }}>
-          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            <RotatingCard>
-              <RotatingCardFront
-                image={solardex}
-                title="Solar Dex"
-                description="Quick Description"
-                color="inceptionPurpleGradient"
-              />
-              <RotatingCardBack
-                image={solardex}
-                title="Launch Date"
-                description="April 28th, 5:00PM EST"
-                action={{
-                  type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
-                }}
-                instagram="https://instagram.com"
-                twitter="https://twitter.com"
-              />
-            </RotatingCard>
-          </Grid>
-          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            <RotatingCard>
-              <RotatingCardFront
-                image={hangoverbears}
-                title="Hangover Bears"
-                description="Quick Description"
-                color="inceptionPurpleGradient"
-              />
-              <RotatingCardBack
-                image={hangoverbears}
-                title="Launch Date"
-                description="Early June"
-                action={{
-                  type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
-                }}
-                instagram="https://instagram.com"
-                twitter="https://twitter.com"
-              />
-            </RotatingCard>
-          </Grid>
-          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            <RotatingCard>
-              <RotatingCardFront
-                image={HungryApes}
-                title="Hungry Apes"
-                description="Quick Description"
-                color="inceptionPurpleGradient"
-              />
-              <RotatingCardBack
-                image={HungryApes}
-                title="Launch Date"
-                description="Late May"
-                action={{
-                  type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
-                }}
-                instagram="https://instagram.com"
-                twitter="https://twitter.com"
-              />
-            </RotatingCard>
-          </Grid>
-        </Grid>
-      </Container>
-
-
     <Container>
-    <Grid container sx={{ mt: 8 }} alignItems="center">
-      <Grid item xs={12} sm={12} md={5} lg={6} xl={8}>
-        <MKBox
-          component="img"
-          width="100%"
-          src={justAlien}
-          sx={{display: "flex", flexDirection: "column", justifyContent: "flex-end"}}
-        >
+      <Grid item container justifyContent="center" mt={8}>
+        <MKBox>
+          <MKTypography variant="h1" fontWeight="bold" color="inceptionLightPurple" align="center">
+            Primary Services
+          </MKTypography>
+          <MKTypography variant="body1" color="white" align="center">
+            Community First, Personalized Services, Exceptional Quality
+          </MKTypography>
         </MKBox>
       </Grid>
-      <Grid
-        item
-        xs={12}
-        sm={12}
-        md={7}
-        lg={6}
-        xl={4}
-      >
-        <MKBox
-          bgColor="white"
-          borderRadius="xl"
-          shadow="lg"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-          mt={{ xs: 20, sm: 18, md: 20 }}
-          mb={{ xs: 20, sm: 18, md: 20 }}
-          mx={3}
-        >
-          <MKButton
-            variant="gradient" color="inceptionPurpleGradient"
-            p={2}
-            mx={2}
-            mt={-3}
-          >
-            <MKTypography variant="h3" color="white">
-              Launch With Us
-            </MKTypography>
-          </MKButton>
-          <MKBox p={3}>
-            <MKTypography variant="body2" color="black" mb={3}>
-              To setup a meeting with the team regarding your NFT project, you must first be an owner of one our Aliens. 
-            </MKTypography>
-            <MKTypography variant="body2" color="black" mb={3}>
-              Then, you may fill out this form, email us at helpmelaunch@gmail.com, or contact us through Twitter or Discord.
-            </MKTypography>
-            <MKBox width="100%" component="form" method="post" autocomplete="off">
-              <Grid container spacing={3}>
-                <Grid item xs={12} md={6}>
-                  <MKInput
-                    variant="standard"
-                    label="Project Name"
-                    InputLabelProps={{ shrink: true }}
-                    fullWidth
-                  
-                    
-                  />
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <MKInput
-                    variant="standard"
-                    label="Token Address"
-                    InputLabelProps={{ shrink: true }}
-                    fullWidth
-                  />
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <MKInput
-                    variant="standard"
-                    label="Discord"
-                    InputLabelProps={{ shrink: true }}
-                    fullWidth
-                  />
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <MKInput
-                    variant="standard"
-                    label="Twitter"
-                    InputLabelProps={{ shrink: true }}
-                    fullWidth
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <MKInput
-                    variant="standard"
-                    label="What can we help you?"
-                    placeholder="Tell us about your project, your team, and how you would like us to assist you"
-                    InputLabelProps={{ shrink: true }}
-                    multiline
-                    fullWidth
-                    rows={6}
-                  />
-                </Grid>
-              </Grid>
-              <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
-                <MKButton type="submit" variant="gradient" color="inceptionPurpleGradient">
-                  Send Message
-                </MKButton>
-                
-              </Grid>
-            </MKBox>
-          </MKBox>
-        </MKBox>
-      </Grid>
-    </Grid>
     </Container>
 
 
-  <Container>
-    <Grid item container justifyContent="center" mt={8}>
-      <MKBox>
-        <MKTypography variant="h1" fontWeight="bold" color="inceptionLightPurple" align="center">
-          Create your NFTs with us
-        </MKTypography>
-        <MKTypography variant="body1" color="white" align="center">
-          Brief description of things
-        </MKTypography>
-      </MKBox>
-    </Grid>
-  </Container>
+    <Container>
+      <Grid container justifyContent="center" direction="row" spacing={4} mt={8}>
+        
+        <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+        <MKBox 
+            
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+          >
+            <SupervisorAccountIcon fontSize="large" sx={{ color: "#cf78fb"}}></SupervisorAccountIcon>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="h4" fontWeight="bold" color="inceptionPurple" align="center">Discord Management</MKTypography>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="body1" color="white" align="center" fontSize="medium" >We supply a team of experienced moderators to help manage, grow, and support your discord community.</MKTypography>
+          </MKBox>
+        </Grid>
 
+        <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+        <MKBox 
+            
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+          >
+            <BeenhereIcon fontSize="large" sx={{ color: "#cf78fb"}}></BeenhereIcon>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="h4" fontWeight="bold" color="inceptionPurple" align="center">Strategy Consulting</MKTypography>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="body1" color="white" align="center" fontSize="medium" >Roadmap creation, whitepaper development, and business consulting with a long term mindset</MKTypography>
+          </MKBox>
+        </Grid>
 
-  <Container>
-    <Grid container justifyContent="center" direction="row" spacing={4} mt={8}>
-      
-      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
-      <MKBox 
-          bgColor="dark"
-          borderRadius="xl"
-          shadow="lg"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-        >
-          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
-        </MKBox>
+        <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+        <MKBox 
+            
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+          >
+            <GroupsIcon fontSize="large" sx={{ color: "#cf78fb"}}></GroupsIcon>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="h4" fontWeight="bold" color="inceptionPurple" align="center">Marketing Growth</MKTypography>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="body1" color="white" align="center" fontSize="medium" >Attracting people to your community using our Social Media expertise</MKTypography>
+          </MKBox>
+        </Grid>
+
+        <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+          <MKBox 
+              
+              display="flex"
+              flexDirection="column"
+              justifyContent="center"
+            >
+              <CodeIcon fontSize="large" sx={{ color: "#cf78fb"}}></CodeIcon>
+            </MKBox>
+            <MKBox>
+              <MKTypography variant="h4" fontWeight="bold" color="inceptionPurple" align="center">Utility Development</MKTypography>
+            </MKBox>
+            <MKBox>
+              <MKTypography variant="body1" color="white" align="center" fontSize="medium">We have the team, you have the idea, lets get to work</MKTypography>
+            </MKBox>
+        </Grid>
+
       </Grid>
 
-      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
-      <MKBox 
-          bgColor="dark"
-          borderRadius="xl"
-          shadow="lg"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-        >
-          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
-        </MKBox>
+
+
+      <Grid container justifyContent="center" direction="row" spacing={4} mt={8}>
+
+        <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+          <MKBox 
+              
+              display="flex"
+              flexDirection="column"
+              justifyContent="center"
+            >
+            <ColorLensIcon fontSize="large" sx={{ color: "#cf78fb"}}></ColorLensIcon>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="h4" fontWeight="bold" color="inceptionPurple" align="center">Art Contracting</MKTypography>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="body1" color="white" align="center" fontSize="medium" >We have an extensive catelog of trusted artist in the 2d and 3d space for your NFTs and other needs.</MKTypography>
+          </MKBox>
+        </Grid>
+        
+        <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+        <MKBox 
+            
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+          >
+            <RocketLaunchIcon fontSize="large" sx={{ color: "#cf78fb"}}></RocketLaunchIcon>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="h4" fontWeight="bold" color="inceptionPurple" align="center">Launchpad</MKTypography>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="body1" color="white" align="center" fontSize="medium" >Personalized launchpad created for your NFT mint. Includes possible SPL-Token and Credit Card integration, bot protection, and much more. </MKTypography>
+          </MKBox>
+        </Grid>
+
+        <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+        <MKBox 
+            
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+          >
+            <LocalAtmIcon fontSize="large" sx={{ color: "#cf78fb"}}></LocalAtmIcon>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="h4" fontWeight="bold" color="inceptionPurple" align="center">Staking</MKTypography>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="body1" color="white" align="center" fontSize="medium" >A staking site developed just for your project. Many different settings to be able to personalize and develop in order to give your community exactly what they are asking for.</MKTypography>
+          </MKBox>
+        </Grid>
+
+        <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+        <MKBox 
+            
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+          >
+            <AccountBalanceIcon fontSize="large" sx={{ color: "#cf78fb"}}></AccountBalanceIcon>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="h4" fontWeight="bold" color="inceptionPurple" align="center">Escrow Services</MKTypography>
+          </MKBox>
+          <MKBox>
+            <MKTypography variant="body1" color="white" align="center" fontSize="medium" >Mint proceeds for projects that launch with us will be sent to an escrow account. Professionally created contracts will be used for payouts which will be time or milestone based. </MKTypography>
+          </MKBox>
+        </Grid>
+
+        
+
       </Grid>
 
-      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
-      <MKBox 
-          bgColor="dark"
-          borderRadius="xl"
-          shadow="lg"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-        >
-          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
-        </MKBox>
+    </Container>
+
+    <Container>
+    <Grid container item sx={{ mt: 16 }} alignItems="center" direction="column">
+        <MKTypography variant="h2" color="light" textGradient mb={2}>Our Current Clients</MKTypography>
       </Grid>
-
-      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
-      <MKBox 
-          bgColor="dark"
-          borderRadius="xl"
-          shadow="lg"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-        >
-          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
-        </MKBox>
+      <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto",  mt: 8 }}>
+        <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+          <RotatingCard>
+            <RotatingCardFront
+              image={solardex}
+              title="Solar Dex"
+              description="The First U.S. Based Solana Dex"
+              color="inceptionPurpleGradient"
+            />
+            <RotatingCardBack
+              image={solardex}
+              title="Launch Date"
+              description="April 28th, 5:00PM EST"
+              action={{
+                type: "internal",
+                route: "/sections/page-sections/page-headers",
+                label: "start with header",
+              }}
+              instagram="https://instagram.com"
+              twitter="https://twitter.com"
+            />
+          </RotatingCard>
+        </Grid>
+        <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+          <RotatingCard>
+            <RotatingCardFront
+              image={hangoverbears}
+              title="Hangover Bears"
+              description="The first NFT/Tequilla hybrid company"
+              color="inceptionPurpleGradient"
+            />
+            <RotatingCardBack
+              image={hangoverbears}
+              title="Launch Date"
+              description="Early June"
+              action={{
+                type: "internal",
+                route: "/sections/page-sections/page-headers",
+                label: "start with header",
+              }}
+              instagram="https://instagram.com"
+              twitter="https://twitter.com"
+            />
+          </RotatingCard>
+        </Grid>
+        <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+          <RotatingCard>
+            <RotatingCardFront
+              image={HungryApes}
+              title="Hungry Apes"
+              description="A P2E game based company with its intentions on giving back to the world by feeding the hungry"
+              color="inceptionPurpleGradient"
+            />
+            <RotatingCardBack
+              image={HungryApes}
+              title="Launch Date"
+              description="Late May"
+              action={{
+                type: "internal",
+                route: "/sections/page-sections/page-headers",
+                label: "start with header",
+              }}
+              instagram="https://instagram.com"
+              twitter="https://twitter.com/HungryApesNFT"
+            />
+          </RotatingCard>
+        </Grid>
       </Grid>
-
-    </Grid>
-
-
-
-    <Grid container justifyContent="center" direction="row" spacing={4} mt={8}>
-      
-      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
-      <MKBox 
-          bgColor="dark"
-          borderRadius="xl"
-          shadow="lg"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-        >
-          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
-        </MKBox>
-      </Grid>
-
-      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
-      <MKBox 
-          bgColor="dark"
-          borderRadius="xl"
-          shadow="lg"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-        >
-          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
-        </MKBox>
-      </Grid>
-
-      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
-      <MKBox 
-          bgColor="dark"
-          borderRadius="xl"
-          shadow="lg"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-        >
-          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="body1" color="white" align="center" fontSize="small" >This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
-        </MKBox>
-      </Grid>
-
-      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
-      <MKBox 
-          bgColor="dark"
-          borderRadius="xl"
-          shadow="lg"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-        >
-          <Icon fontSize="large" sx={{ color: "#cf78fb"}}>shower</Icon>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="h3" fontWeight="bold" color="inceptionPurple" align="center">Item header</MKTypography>
-        </MKBox>
-        <MKBox>
-          <MKTypography variant="body1" color="white" align="center" fontSize="small">This is lots of text that will describe the item header above. Here is more text. This needs to be filled in</MKTypography>
-        </MKBox>
-      </Grid>
-
-    </Grid>
-
-  </Container>
-
-  <Container>
-    <Grid container justifyContent="center" direction="row" spacing={4} mt={8}>
-      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
-        <MKBox
-          width="100%"
-          minHeight="50vh"
-          color="white"
-          bgColor="inceptionPurpleGradient"
-          variant="gradient"
-          borderRadius="lg"
-          shadow="lg"
-          opacity={1}
-          p={2}
-        >
-          Box
-        </MKBox>
-      </Grid>
-    </Grid>
-  </Container>
-
-
+    </Container>
 
 
     <MKBox pt={6} px={1} mt={6}>

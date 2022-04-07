@@ -23,6 +23,8 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import MKTypography from "components/MKTypography";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 import MKBox from "components/MKBox";
+import SimpleFooter from "examples/Footers/SimpleFooter";
+
 
 
 // Routes
@@ -47,33 +49,77 @@ function FAQs() {
         <Grid container item sx={{ mt: 2 }} alignItems="center" direction="column">
           <MKTypography variant="h2" alignText="center" color="inceptionPurpleGradient" textGradient mb={2}>FAQs</MKTypography>
         </Grid>
-        <Grid container spacing={3} sx={{ mt: 8 }} alignItems="center">
-          <Grid item xs={12} lg={4}>
-            <FilledInfoCard
-              variant="gradient"
-              color="dark"
-              title="Why Should I Use An Agency"
-              description="Answer 1"
-            />
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <FilledInfoCard
-              variant="gradient"
-              color="dark"
-              title="What Is An Escrow"
-              description="This is an example answer for what is an escrow. We talk about what an escrow is right here"
-            />
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <FilledInfoCard
-              variant="gradient"
-              color="dark"
-              title="Another Question"
-              description="Just fucking read the white paper "
-            />
-          </Grid>
-        </Grid>
+        
       </Container>
+      <Container>
+      <Grid container justifyContent="center" direction="row" spacing={4} mt={8}>
+        <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+          <MKBox
+            width="100%"
+            minHeight="50vh"
+            color="white"
+            bgColor="inceptionPurpleGradient"
+            variant="gradient"
+            borderRadius="lg"
+            shadow="lg"
+            opacity={1}
+            p={2}
+          >
+            What is an NFT? 
+            <MKTypography variant="body1" color="white" align="center" fontSize="medium">
+            A non-fungible token (NFT) is a non-interchangeable unit of data stored on a blockchain, a form of digital ledger, 
+            that can be sold and traded. Types of NFT data units may be associated with digital files such as photos, videos, 
+            and audio. Because each token is uniquely identifiable, NFTs differ from blockchain cryptocurrencies, such as Bitcoin. 
+            To put it in simplistic terms, think of an NFT as a unique, one of a kind trading card.  
+            </MKTypography>
+          </MKBox>
+        </Grid>
+        <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+          <MKBox
+            width="100%"
+            minHeight="50vh"
+            color="white"
+            bgColor="inceptionPurpleGradient"
+            variant="gradient"
+            borderRadius="lg"
+            shadow="lg"
+            opacity={1}
+            p={2}
+          >
+            What can I do with an NFT? 
+            <MKTypography variant="body1" color="white" align="center" fontSize="medium">
+            With NFT’s the sky's the limit. An NFT can be used to bridge the gap between real world value and virtual world value. 
+            By owning an NFT you can stake it, earning a range of value back in the form of virtual currency from just holding your investment. 
+            This virtual currency can be used for purchases such as Raffle Entries, Mystery Boxes, NFT evolutions and so much more.
+            Think of your NFT like WIlly Wonka’s Golden Ticket. With this NFT you can provide real life value in the form of entrance 
+            to exclusive VIP style events, Brand Trips, Goodie Bags, the works!
+            </MKTypography>
+          </MKBox>
+        </Grid>
+        <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={6} lg={3} xl={3}>
+          <MKBox
+            width="100%"
+            minHeight="50vh"
+            color="white"
+            bgColor="inceptionPurpleGradient"
+            variant="gradient"
+            borderRadius="lg"
+            shadow="lg"
+            opacity={1}
+            p={2}
+          >
+            Can you sell a NFT? 
+            <MKTypography variant="body1" color="white" align="center" fontSize="medium">
+            Yes! You can sell these one of a kind trading cards on a marketplace like Magic Eden. Providing you with 
+            real USD value in both the short term and the long term.
+            </MKTypography>
+          </MKBox>
+        </Grid>
+      </Grid>
+    </Container>
+    <MKBox pt={6} px={1} mt={6}>
+      <SimpleFooter />
+    </MKBox>
 
     </>
   );

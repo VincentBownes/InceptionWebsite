@@ -54,7 +54,7 @@ const routes = [
   },
   {
     name: "About Us",
-    route: "/pages/AboutUs",
+    route: "/AboutUs",
     component: <AboutUs />,
   },
   {
@@ -67,6 +67,8 @@ const routes = [
     route: "/pages/Whitepaper.js",
     component: <Whitepaper />,
   }
+  
+  
 ];
 
 export default routes;
