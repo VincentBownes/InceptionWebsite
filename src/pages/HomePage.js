@@ -1,6 +1,7 @@
 // Mui components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import CardMedia from '@mui/material/CardMedia';
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -24,6 +25,7 @@ import routes from "routes";
 
 // Images
 import vid from "assets/images/animation.gif"
+import mp4 from "assets/images/animation.mp4"
 import black from "assets/images/black.png"
 import justAlien from "assets/images/justAlien.gif";
 import HungryApes from "assets/images/HungryApes.jpeg";
@@ -78,11 +80,12 @@ function HomePage() {
         }}
       >
           <MKBox
-              component="img"
-              width="100%"
-              src={vid}
-              sx={{display: "flex", flexDirection: "row", justifyContent: "flex-end"}}
+              width="100%"                
+              sx={{display: "flex", flexDirection: "row", justifyContent: "center"}}
             >
+              <video autoPlay loop muted>
+                <source src={mp4} type="video/mp4"></source>
+                </video>
             </MKBox>
       </MKBox>
       
@@ -90,7 +93,7 @@ function HomePage() {
     <Container>
       <Grid item container justifyContent="center" mt={8}>
         <MKBox>
-          <MKTypography variant="h1" fontWeight="bold" color="inceptionLightPurple" align="center">
+          <MKTypography variant="h1" fontWeight="bold" color="inceptionPurple" align="center">
             Primary Services
           </MKTypography>
           <MKTypography variant="body1" color="white" align="center">

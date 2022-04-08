@@ -47,7 +47,7 @@ function FAQs() {
         ></MKBox>
       <Container>
         <Grid container item sx={{ mt: 2 }} alignItems="center" direction="column">
-          <MKTypography variant="h2" alignText="center" color="inceptionPurpleGradient" textGradient mb={2}>FAQs</MKTypography>
+          <MKTypography variant="h2" aligntext="center" color="inceptionPurpleGradient" textGradient mb={2}>FAQs</MKTypography>
         </Grid>
         
       </Container>
