@@ -39,6 +39,7 @@ Coded by www.creative-tim.com
 import HomePage from "pages/HomePage"
 import AboutUs from "pages/AboutUs";
 import Clients from "pages/LandingPages/Clients";
+import FAQs from "pages/FAQs";
 import SignIn from "pages/LandingPages/SignIn"
 import Solardex from "pages/LandingPages/Launchpads/solarlaunch"
 import Services from "layouts/pages/services"
@@ -54,18 +55,13 @@ const routes = [
   },
   {
     name: "About Us",
-    route: "/pages/AboutUs",
+    route: "/AboutUs",
     component: <AboutUs />,
   },
   {
-    name: "Clients",
-    route: "/Clients",
-    component: <Clients />,
-  },
-  {
-    name: "Launchpad",
-    route: "/pages/LandingPages/SignIn",
-    component: <SignIn />,
+    name: "FAQs",
+    route: "/FAQs",
+    component: <FAQs />,
   },
   {
     name: "Solarlaunch",
@@ -82,6 +78,8 @@ const routes = [
     route: "/pages/Whitepaper.js",
     component: <Whitepaper />,
   }
+  
+  
 ];
 
 

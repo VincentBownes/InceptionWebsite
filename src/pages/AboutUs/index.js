@@ -30,7 +30,9 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import cloth from "assets/images/inceptioncloth.jpg"
+import cloth from "assets/images/cloth.jpg"
+import discordIcon from "assets/images/shapes/discord.png"
+import EmailIcon from '@mui/icons-material/Email';
 
 function AboutUs() {
   return (
@@ -81,22 +83,20 @@ function AboutUs() {
               color="white"
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
+                  fontSize: size["5xl"],
                 },
               })}
             >
               Meet our dedicated team
             </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re making lots of NFTs and you are going to buy them!
-            </MKTypography>
+            
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on
             </MKTypography>
             <MKBox display="flex" justifyContent="center" alignItems="center">
               <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
+                  <img src={discordIcon} height="30vh"></img>
+                </MKTypography>
               <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
                 <i className="fab fa-instagram" />
               </MKTypography>
@@ -104,7 +104,7 @@ function AboutUs() {
                 <i className="fab fa-twitter" />
               </MKTypography>
               <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
+                <EmailIcon />
               </MKTypography>
             </MKBox>
           </Grid>

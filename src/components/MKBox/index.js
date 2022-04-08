@@ -59,6 +59,9 @@ MKBox.propTypes = {
     "error",
     "light",
     "dark",
+    "inceptionPurpleGradient",
+    "inceptionLightPurple",
+    "inceptionPurple",
     "none",
   ]),
 };
