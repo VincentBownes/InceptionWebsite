@@ -18,7 +18,8 @@ import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 import Icon from "@mui/material/Icon";
 
-
+// Material Kit 2 React Helper Functions
+import pxToRem from "assets/theme/functions/pxToRem";
 
 // Routes
 import routes from "routes";
@@ -46,20 +47,7 @@ import footerRoutes from "footer.routes";
 
 function HomePage() {
   return (
-    <MKBox
-      minHeight="100%"
-      width="100%"
-      back
-      sx={{
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        display: "grid",
-        placeItems: "flex-end",
-      }}
-      style={{
-        backgroundColor: 'black',
-      }}
-    >
+    <>
       <DefaultNavbar
         routes={routes}
         brand = ""
@@ -330,10 +318,146 @@ function HomePage() {
     </Container>
 
 
+    <Container>
+    <Grid container justifyContent="center" direction="row" spacing={4} mt={8}>
+
+    <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={12} lg={4} xl={4}>
+        <MKBox
+          width="100%"
+          minHeight="25vh"
+          color="white"
+          bgColor="dark"
+          variant="gradient"
+          borderRadius="lg"
+          shadow="lg"
+          opacity={1}
+          p={2}
+        >
+          <Grid container item>
+            <MKBox width="100%" mt={-3} mx={-3}>
+                <img src={justAlien} height={200} width={200}/>
+            </MKBox>
+            <MKBox mt={-3} mx={2}>
+              <MKTypography variant="h1" fontWeight="bold" fontSize={pxToRem(60)} color="light" align="left" >Item header</MKTypography>
+            </MKBox>
+            <MKBox mt={1} mx={2}>
+              <MKTypography variant="body1" color="white" align="left" fontWeight="bold" fontSize="medium">This is lots of text that will describe the item header above.</MKTypography>
+            </MKBox>
+            <MKBox mt={1} mx={3}>
+              <MKTypography variant="body2" color="white" align="left" fontSize="small" fontWeight="light"> 
+                {"\u2022"}  more text more text more text more text more text
+              </MKTypography>
+              <MKTypography variant="body2" color="white" align="left" fontSize="small" fontWeight="light"> 
+                {"\u2022"}  more text
+              </MKTypography>
+              <MKTypography variant="body2" color="white" align="left" fontSize="small" fontWeight="light"> 
+                {"\u2022"}  more text
+              </MKTypography>
+            </MKBox>
+            <MKBox mt={1} mx={2}>
+              <MKTypography variant="body1" color="white" align="left" fontWeight="bold" fontSize="medium"  fontWeight="light">This is lots of text that will describe the item header above.</MKTypography>
+            </MKBox>
+          </Grid>
+        </MKBox>
+      </Grid>
+
+      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={12} lg={4} xl={4}>
+        <MKBox
+          width="100%"
+          minHeight="25vh"
+          color="white"
+          bgColor="inceptionPurpleGradient"
+          variant="gradient"
+          borderRadius="lg"
+          shadow="lg"
+          opacity={1}
+          p={2}
+        >
+          <Grid container item>
+            <MKBox width="100%" mt={-3} mx={-3}>
+                <img src={justAlien} height={200} width={200}/>
+            </MKBox>
+            <MKBox mt={-3} mx={2}>
+              <MKTypography variant="h1" fontWeight="bold" fontSize={pxToRem(60)} color="light" align="left" >Item header</MKTypography>
+            </MKBox>
+            <MKBox mt={1} mx={2}>
+              <MKTypography variant="body1" color="white" align="left" fontWeight="bold" fontSize="medium">This is lots of text that will describe the item header above.</MKTypography>
+            </MKBox>
+            <MKBox mt={1} mx={3}>
+              <MKTypography variant="body2" color="white" align="left" fontSize="small" fontWeight="light"> 
+                {"\u2022"}  more text more text more text more text more text
+              </MKTypography>
+              <MKTypography variant="body2" color="white" align="left" fontSize="small" fontWeight="light"> 
+                {"\u2022"}  more text
+              </MKTypography>
+              <MKTypography variant="body2" color="white" align="left" fontSize="small" fontWeight="light"> 
+                {"\u2022"}  more text
+              </MKTypography>
+            </MKBox>
+            <MKBox mt={1} mx={2}>
+              <MKTypography variant="body1" color="white" align="left" fontWeight="bold" fontSize="medium"  fontWeight="light">This is lots of text that will describe the item header above.</MKTypography>
+            </MKBox>
+          </Grid>
+
+          
+          
+        </MKBox>
+      </Grid>
+
+      <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={12} lg={4} xl={4}>
+        <MKBox
+          width="100%"
+          minHeight="25vh"
+          color="white"
+          bgColor="dark"
+          variant="gradient"
+          borderRadius="lg"
+          shadow="lg"
+          opacity={1}
+          p={2}
+        >
+          <Grid container item>
+            <MKBox width="100%" mt={-3} mx={-3}>
+                <img src={justAlien} height={200} width={200}/>
+            </MKBox>
+            <MKBox mt={-3} mx={2}>
+              <MKTypography variant="h1" fontWeight="bold" fontSize={pxToRem(60)} color="light" align="left" >Item header</MKTypography>
+            </MKBox>
+            <MKBox mt={1} mx={2}>
+              <MKTypography variant="body1" color="white" align="left" fontWeight="bold" fontSize="medium">This is lots of text that will describe the item header above.</MKTypography>
+            </MKBox>
+            <MKBox mt={1} mx={3}>
+              <MKTypography variant="body2" color="white" align="left" fontSize="small" fontWeight="light"> 
+                {"\u2022"}  more text more text more text more text more text
+              </MKTypography>
+              <MKTypography variant="body2" color="white" align="left" fontSize="small" fontWeight="light"> 
+                {"\u2022"}  more text
+              </MKTypography>
+              <MKTypography variant="body2" color="white" align="left" fontSize="small" fontWeight="light"> 
+                {"\u2022"}  more text
+              </MKTypography>
+            </MKBox>
+            <MKBox mt={1} mx={2}>
+              <MKTypography variant="body1" color="white" align="left" fontWeight="bold" fontSize="medium"  fontWeight="light">This is lots of text that will describe the item header above.</MKTypography>
+            </MKBox>
+          </Grid>
+
+          
+          
+        </MKBox>
+      </Grid>
+
+
+
+    </Grid>
+  </Container>
+
+    
+
     <MKBox pt={6} px={1} mt={6}>
       <SimpleFooter />
     </MKBox>
-  </MKBox>
+  </>
   );
 }
 
