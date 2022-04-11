@@ -318,6 +318,10 @@ function HomePage() {
 
 
     <Container>
+    <Grid container item sx={{ mt: 16 }} alignItems="center" direction="column">
+        <MKTypography variant="h2" color="light" textGradient mb={2}>Roadmap</MKTypography>
+      </Grid>
+            
     <Grid container justifyContent="center" direction="row" spacing={4} mt={8}>
 
     <Grid container item alignItems="center" direction="column" xs={12} sm={12} md={12} lg={4} xl={4}>

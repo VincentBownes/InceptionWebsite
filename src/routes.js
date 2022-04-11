@@ -40,6 +40,7 @@ import HomePage from "pages/HomePage"
 import AboutUs from "pages/AboutUs";
 import Clients from "pages/LandingPages/Clients";
 import FAQs from "pages/FAQs";
+import RevenueSharing from "pages/revenueSharing";
 import SignIn from "pages/LandingPages/SignIn"
 
 // Sections
@@ -56,6 +57,11 @@ const routes = [
     name: "About Us",
     route: "/AboutUs",
     component: <AboutUs />,
+  },
+  {
+    name: "Revenue",
+    route: "/RevenueSharing",
+    component: <RevenueSharing />,
   },
   {
     name: "FAQs",
