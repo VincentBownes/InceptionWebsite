@@ -67,14 +67,13 @@ function HomePage() {
           placeItems: "center",
         }}
       >
-          <MKBox
-              width="100%"                
-              sx={{display: "flex", flexDirection: "row", justifyContent: "center"}}
-            >
-              <video autoPlay loop muted>
-                <source src={mp4} type="video/mp4"></source>
-                </video>
-            </MKBox>
+        <Container>
+          <Grid container item>
+            <video autoPlay loop muted width="100%">
+              <source src={mp4} type="video/mp4"></source>
+            </video>
+          </Grid>
+        </Container>
       </MKBox>
       
 
