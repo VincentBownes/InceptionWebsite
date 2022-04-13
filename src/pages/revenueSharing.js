@@ -32,6 +32,9 @@ import footerRoutes from "footer.routes";
 // Images
 import tank from "assets/images/inceptiontank.gif"
 import white from "assets/images/White.gif"
+import orange from "assets/images/Orange.gif"
+import purple from "assets/images/Purple.gif"
+import red from "assets/images/Red.gif"
 
 function RevenueSharing() {
   return (
@@ -93,18 +96,57 @@ function RevenueSharing() {
         back 
         color="dark"
       >
-          <Container>
-              <Grid container>
-                  <Grid container item direction="column" xs={12} sm={12}>
-                      <Grid item xs={5} sm={5} md={5} lg={5} xl={5}>
+        <Container>
+            <Grid container>
+                <Grid container item direction="row" mt={8} xs={12} sm={12} md={12} lg={12} xl={12}>
+                    <Grid item xs={5} sm={5} md={5} lg={5} xl={5}>
                       <MKBox width="100%" component="img" src={white}></MKBox>
-                      </Grid>
-                      <Grid item xs={5} sm={5} md={5} lg={5} xl={5}>
-                      <MKTypography>sample text text text</MKTypography>
-                      </Grid>
-                  </Grid>
-              </Grid>
-          </Container>
+                    </Grid>
+                    <Grid item textAlign="center" mx={4} xs={5} sm={5} md={5} lg={5} xl={5}>
+                      <MKTypography color="light">sample text text text. heres some descriptions of our revenue sharing. wooooo revenue sharing.</MKTypography>
+                    </Grid>
+                </Grid>
+
+                <Grid container item direction="row" mt={8} xs={12} sm={12} md={12} lg={12} xl={12}>
+                    <Grid item xs={5} sm={5} md={5} lg={5} xl={5}>
+                      <MKBox width="100%" component="img" src={orange}></MKBox>
+                    </Grid>
+                    <Grid item textAlign="center" mx={4} xs={5} sm={5} md={5} lg={5} xl={5}>
+                      <MKTypography color="light">sample text text text. heres some descriptions of our revenue sharing. wooooo revenue sharing.</MKTypography>
+                    </Grid>
+                </Grid>
+
+                <Grid container item direction="row" mt={8} xs={12} sm={12} md={12} lg={12} xl={12}>
+                    <Grid item xs={5} sm={5} md={5} lg={5} xl={5}>
+                      <MKBox width="100%" component="img" src={purple}></MKBox>
+                    </Grid>
+                    <Grid item textAlign="center" mx={4} xs={5} sm={5} md={5} lg={5} xl={5}>
+                      <MKTypography color="light">sample text text text. heres some descriptions of our revenue sharing. wooooo revenue sharing.</MKTypography>
+                    </Grid>
+                </Grid>
+
+                <Grid container item direction="row" mt={8} xs={12} sm={12} md={12} lg={12} xl={12}>
+                    <Grid item xs={5} sm={5} md={5} lg={5} xl={5}>
+                      <MKBox width="100%" component="img" src={red}></MKBox>
+                    </Grid>
+                    <Grid item textAlign="center" mx={4} xs={5} sm={5} md={5} lg={5} xl={5}>
+                      <MKTypography color="light">sample text text text. heres some descriptions of our revenue sharing. wooooo revenue sharing.</MKTypography>
+                    </Grid>
+                </Grid>
+
+                <Grid container item direction="row" mt={8} xs={12} sm={12} md={12} lg={12} xl={12}>
+                    <Grid item xs={5} sm={5} md={5} lg={5} xl={5}>
+                      <MKBox width="100%" component="img" src={white}></MKBox>
+                    </Grid>
+                    <Grid item textAlign="center" mx={4} xs={5} sm={5} md={5} lg={5} xl={5}>
+                      <MKTypography color="light">sample text text text. heres some descriptions of our revenue sharing. wooooo revenue sharing.</MKTypography>
+                    </Grid>
+                </Grid>
+
+
+
+            </Grid>
+        </Container>
       
 
       </MKBox>
