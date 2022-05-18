@@ -182,6 +182,7 @@ DefaultReviewCard.propTypes = {
     "dark",
     "light",
     "inceptionPurpleGradient",
+    "bananaYellow",
   ]),
   image: PropTypes.string,
   name: PropTypes.string.isRequired,

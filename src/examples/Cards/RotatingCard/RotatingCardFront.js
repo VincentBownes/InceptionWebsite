@@ -84,6 +84,7 @@ RotatingCardFront.propTypes = {
     "dark",
     "light",
     "inceptionPurpleGradient",
+    "bananaYellow"
   ]),
   image: PropTypes.string.isRequired,
   icon: PropTypes.node,

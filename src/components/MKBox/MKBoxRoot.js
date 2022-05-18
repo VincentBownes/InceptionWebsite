@@ -47,7 +47,8 @@ export default styled(Box)(({ theme, ownerState }) => {
     "error",
     "dark",
     "light",
-    "inceptionPurpleGradient"
+    "inceptionPurpleGradient",
+    "bananaYellowGradient"
   ];
 
   const validColors = [
@@ -65,6 +66,7 @@ export default styled(Box)(({ theme, ownerState }) => {
     "text",
     "inceptionLightPurple",
     "inceptionPurple",
+    "bananaYellow",
     "grey-100",
     "grey-200",
     "grey-300",

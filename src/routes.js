@@ -41,7 +41,8 @@ import AboutUs from "pages/AboutUs";
 import Clients from "pages/LandingPages/Clients";
 import FAQs from "pages/FAQs";
 import SignIn from "pages/LandingPages/SignIn"
-import Solardex from "pages/LandingPages/Launchpads/solarlaunch"
+import Solardex from "pages/LandingPages/Launchpads/Solardex/solarlaunch"
+import HungryApes from "pages/LandingPages/Launchpads/HungryApes/hungryApes"
 import Services from "layouts/pages/services"
 
 // Sections
@@ -67,6 +68,11 @@ const routes = [
     name: "Solarlaunch",
     route: "/solardex",
     component: <Solardex />
+  },
+  {
+    name: "Hungry Apes",
+    route: "/hungryApes",
+    component: <HungryApes />
   },
   {
     name: "Services",

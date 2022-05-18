@@ -224,7 +224,8 @@ DefaultNavbar.propTypes = {
         "light",
         "default",
         "white",
-        "inceptionPurple"
+        "inceptionPurple",
+        "bananaYellow"
       ]),
       label: PropTypes.string.isRequired,
     }),

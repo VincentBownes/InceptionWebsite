@@ -62,6 +62,7 @@ MKBox.propTypes = {
     "inceptionPurpleGradient",
     "inceptionLightPurple",
     "inceptionPurple",
+    "bananaYellow",
     "none",
   ]),
 };

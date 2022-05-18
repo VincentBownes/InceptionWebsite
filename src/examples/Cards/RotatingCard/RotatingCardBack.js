@@ -104,7 +104,7 @@ RotatingCard.propTypes = {
     "error",
     "dark",
     "light",
-    "inceptionPurple",
+    "inceptionPurpleGradient",
   ]),
   image: PropTypes.string.isRequired,
   title: PropTypes.node.isRequired,

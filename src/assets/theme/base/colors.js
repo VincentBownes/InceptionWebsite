@@ -101,6 +101,11 @@ export default {
     focus: "#6b02a2",
   },
 
+  bananaYellow: {
+    main: "#ffe135",
+    focus: "#ffe135",
+  },
+
   inceptionLightPurple: {
     main: "#cf78fb",
     focus: "#cf78fb",
@@ -260,6 +265,10 @@ export default {
       main: "#6b02a2",
       focus: "#6b02a2",
     },
+    bananaYellow: {
+      main: "#ffe135",
+      focus: "#ffe135",
+    },
   },
 
   coloredShadows: {
@@ -271,7 +280,8 @@ export default {
     error: "#f44336",
     light: "#adb5bd",
     dark: "#404040",
-    inceptionPurple: "#6b02a2"
+    inceptionPurple: "#6b02a2",
+    bananaYellow: "#ffe135"
   },
 
   inputBorderColor: "#d2d6da",
